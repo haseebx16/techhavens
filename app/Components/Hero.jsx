@@ -60,7 +60,7 @@ export default function Hero() {
       }
 
   return (
-    <section className={`${font.className} relative min-h-[24rem] pt-20`}>
+    <section className={`${font.className} relative min-h-[24rem] p-12`}>
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-black/60 z-10"></div>
