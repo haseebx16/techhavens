@@ -19,3 +19,53 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto px-4;
+  }
+  
+  .btn-primary {
+    @apply bg-cyan-500 text-white px-6 py-2 rounded font-medium hover:bg-cyan-600 transition-colors;
+    font-family: 'Oswald', sans-serif;
+  }
+  
+  .btn-secondary {
+    @apply border-2 border-orange-500 text-orange-500 px-6 py-2 rounded font-medium hover:bg-orange-500 hover:text-white transition-colors;
+    font-family: 'Oswald', sans-serif;
+  }
+
+  .form-input {
+    @apply w-full p-3 rounded bg-white font-normal;
+    font-family: 'Oswald', sans-serif;
+  }
+
+  .damascus-pattern {
+    background-color: #1a1a1a;
+    background-image: 
+      linear-gradient(30deg, #222222 12%, transparent 12.5%, transparent 87%, #222222 87.5%, #222222),
+      linear-gradient(150deg, #222222 12%, transparent 12.5%, transparent 87%, #222222 87.5%, #222222),
+      linear-gradient(30deg, #222222 12%, transparent 12.5%, transparent 87%, #222222 87.5%, #222222),
+      linear-gradient(150deg, #222222 12%, transparent 12.5%, transparent 87%, #222222 87.5%, #222222),
+      linear-gradient(60deg, #22222277 25%, transparent 25.5%, transparent 75%, #22222277 75%, #22222277),
+      linear-gradient(60deg, #22222277 25%, transparent 25.5%, transparent 75%, #22222277 75%, #22222277);
+    background-size: 40px 70px;
+    background-position: 0 0, 0 0, 20px 35px, 20px 35px, 0 0, 20px 35px;
+  }
+
+  /* Slick carousel custom styles */
+  .slick-dots {
+    bottom: -40px;
+  }
+
+  .slick-dots li button:before {
+    font-size: 12px;
+    color: #f97316;
+    opacity: 0.3;
+  }
+
+  .slick-dots li.slick-active button:before {
+    color: #f97316;
+    opacity: 1;
+  }
+}

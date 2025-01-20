@@ -32,15 +32,15 @@ export default function Header() {
           {/* Desktop Navigation - Center */}
           <div className="hidden md:flex justify-center w-2/4">
             <div className="flex space-x-6">
-              <Link href="/" className="nav-link">
+              <Link href="/" className="nav-link hover:text-cyan-500">
                 Home
               </Link>
-              <Link href="/about" className="nav-link">
+              <Link href="/about" className="nav-link hover:text-cyan-500">
                 About Us
               </Link>
               <div className="relative group">
                 <button 
-                  className="nav-link flex items-center"
+                  className="nav-link hover:text-cyan-500 flex items-center"
                   onMouseEnter={() => setIsServicesOpen(true)}
                   onMouseLeave={() => setIsServicesOpen(false)}
                 >
@@ -67,13 +67,13 @@ export default function Header() {
                   </div>
                 )}
               </div>
-              <Link href="/testimonials" className="nav-link">
+              <Link href="/testimonials" className="nav-link hover:text-cyan-500">
                 Testimonials
               </Link>
-              <Link href="/portfolio" className="nav-link">
+              <Link href="/portfolio" className="nav-link hover:text-cyan-500">
                 Portfolio
               </Link>
-              <Link href="/contact" className="nav-link">
+              <Link href="/contact" className="nav-link hover:text-cyan-500">
                 Contact Us
               </Link>
             </div>
