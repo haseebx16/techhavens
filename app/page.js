@@ -3,6 +3,7 @@ import Header from "./Components/Navbar";
 import Hero from "./Components/Hero";
 import Think from "./Components/Think";
 import Identity from "./Components/Identity";
+import Choose from "./Components/Choose";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero/>
       <Think/>
       <Identity/>
+      <Choose/>
    </div>
   );
 }

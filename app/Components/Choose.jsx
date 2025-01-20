@@ -1,0 +1,27 @@
+import React from 'react'
+import { font } from './fonts/font'
+
+const Choose = () => {
+  return (
+    <div className={`${font.className} md:p-16 z-10 p-8 flex flex-col md:flex-row md:justify-center md:items-center`}>
+        <section className='w-[50%] flex items-center justify-center'>
+            <div>
+                <img src='/iPhone.png' className='ml-24'/>
+            </div>
+        </section>
+        <section className='md:w-[50%] w-full'>
+            <div>
+                <p className='md:text-3xl text-2xl uppercase text-cyan-500'>Curious Why-</p>
+                <h1 className='md:text-5xl text-3xl font-bold text-black mt-6'>People Choose Tech Haven</h1>
+                <p className='text-md text-gray-600 mt-6'>We are a platform that offers amazing career opportunities to everyone who shakes our hand.</p>
+                <p className='text-md text-gray-600 mt-6'>&#x2022;&nbsp; Vetted once, eligible for life</p>
+                <p className='text-md text-gray-600 '>&#x2022;&nbsp; Exclusive Turing developer community</p>
+                <p className='text-md text-gray-600'>&#x2022;&nbsp; Income stability thanks to a 99% rematch rate</p>
+                
+            </div>
+        </section>
+    </div>
+  )
+}
+
+export default Choose

@@ -3,7 +3,7 @@ import { font } from './fonts/font'
 
 const Identity = () => {
   return (
-    <div className={`${font.className} md:p-16 p-8 flex flex-col md:flex-row md:justify-center md:items-center`}>
+    <div className={`${font.className} md:p-16 p-8 z-10 flex flex-col md:flex-row md:justify-center md:items-center`}>
         <section className='w-[50%]'>
             <div>
                 <img src='/laptop.png'/>
