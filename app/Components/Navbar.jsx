@@ -35,9 +35,9 @@ export default function Header() {
               <Link href="/" className="nav-link hover:text-cyan-500">
                 Home
               </Link>
-              <Link href="/about" className="nav-link hover:text-cyan-500">
+              {/* <Link href="/about" className="nav-link hover:text-cyan-500">
                 About Us
-              </Link>
+              </Link> */}
               <div className="relative group">
                 <button 
                   className="nav-link hover:text-cyan-500 flex items-center"
@@ -67,12 +67,12 @@ export default function Header() {
                   </div>
                 )}
               </div>
-              <Link href="/testimonials" className="nav-link hover:text-cyan-500">
+              {/* <Link href="/testimonials" className="nav-link hover:text-cyan-500">
                 Testimonials
               </Link>
               <Link href="/portfolio" className="nav-link hover:text-cyan-500">
                 Portfolio
-              </Link>
+              </Link> */}
               <Link href="/contact" className="nav-link hover:text-cyan-500">
                 Contact Us
               </Link>
