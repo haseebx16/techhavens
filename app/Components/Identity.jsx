@@ -15,19 +15,19 @@ const Identity = () => {
                 <h1 className='md:text-5xl text-3xl font-bold text-black mt-6'>To Be The Blueprint for Your Digital Identity.</h1>
                 <p className='text-md text-gray-600 mt-6'>At Tech Haven, build the perfect team for your project whenever needed! This enables you to save time, focus on your project, and ensure successful completion.</p>
                 <div className='grid md:grid-cols-2 mt-6 gap-4 '>
-                    <div className='p-4 bg-blue-900'>
+                    <div className='p-4 bg-cyan-500 '>
                         <h1 className='text-2xl text-white'>Speedy Hiring Process</h1>
                         <p className='text-white pt-4'>Our mission is to provide the best possible service to our clients and to help them achieve their goals.</p>
                     </div>
-                    <div className='p-4 bg-blue-900'>
+                    <div className='p-4 bg-blue-900 hover:bg-cyan-500 duration-300'>
                         <h1 className='text-2xl text-white'> ONLY THE BEST OF THE BEST</h1>
                         <p className='text-white pt-4'>Our vision is to be the best in the industry and to provide the best possible service to our clients.</p>
                     </div>
-                    <div className='p-4 bg-blue-900'>
+                    <div className='p-4 bg-blue-900 hover:bg-cyan-500 duration-300'>
                         <h1 className='text-2xl text-white'>FUTURE-PROOFED TALENT                        </h1>
                         <p className='text-white pt-4'>Our mission is to provide the best possible service to our clients and to help them achieve their goals.</p>
                     </div>
-                    <div className='p-4 bg-blue-900'>
+                    <div className='p-4 bg-blue-900 hover:bg-cyan-500 duration-300'>
                         <h1 className='text-2xl text-white'>EXCEPTIONAL PROFESSIONALISM                        </h1>
                         <p className='text-white pt-4'>Our vision is to be the best in the industry and to provide the best possible service to our clients.</p>
                     </div>
