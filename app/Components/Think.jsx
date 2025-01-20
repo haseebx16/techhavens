@@ -4,13 +4,9 @@ import { font } from './fonts/font'
 const Think = () => {
   return (
     <div className={`${font.className} md:p-16 p-8 flex flex-col md:flex-row md:justify-center md:items-center`}>
-        <section className='w-[50%]'>
-            <div>
-                image
-            </div>
-            <div>
-                image2
-            </div>
+        <section className='w-[50%] mr-12'>
+            <img src='asian-about.jpg' alt='img'/>
+           
         </section>
         <section className='md:w-[50%] w-full'>
             <div>
