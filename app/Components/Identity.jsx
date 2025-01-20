@@ -19,15 +19,15 @@ const Identity = () => {
                         <h1 className='text-2xl text-white'>Speedy Hiring Process</h1>
                         <p className='text-white pt-4'>Our mission is to provide the best possible service to our clients and to help them achieve their goals.</p>
                     </div>
-                    <div className='p-4 bg-blue-900 hover:bg-cyan-500 duration-300'>
+                    <div className='p-4 bg-emerald-400 hover:bg-cyan-500 duration-300'>
                         <h1 className='text-2xl text-white'> ONLY THE BEST OF THE BEST</h1>
                         <p className='text-white pt-4'>Our vision is to be the best in the industry and to provide the best possible service to our clients.</p>
                     </div>
-                    <div className='p-4 bg-blue-900 hover:bg-cyan-500 duration-300'>
+                    <div className='p-4 bg-emerald-400 hover:bg-cyan-500 duration-300'>
                         <h1 className='text-2xl text-white'>FUTURE-PROOFED TALENT                        </h1>
                         <p className='text-white pt-4'>Our mission is to provide the best possible service to our clients and to help them achieve their goals.</p>
                     </div>
-                    <div className='p-4 bg-blue-900 hover:bg-cyan-500 duration-300'>
+                    <div className='p-4 bg-emerald-400 hover:bg-cyan-500 hover:text-white duration-300'>
                         <h1 className='text-2xl text-white'>EXCEPTIONAL PROFESSIONALISM                        </h1>
                         <p className='text-white pt-4'>Our vision is to be the best in the industry and to provide the best possible service to our clients.</p>
                     </div>
