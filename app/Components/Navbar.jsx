@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
+import { font } from './fonts/font';
 import { useState } from 'react';
 
 export default function Header() {
@@ -16,7 +17,7 @@ export default function Header() {
   ];
 
   return (
-    <header className="bg-white shadow-md sticky top-0 z-50">
+    <header className={`${font.className} bg-white shadow-md sticky top-0 z-50`}>
       <nav className="max-w-[1400px] mx-auto px-2">
         <div className="flex items-center">
           {/* Logo - Left */}
@@ -81,7 +82,7 @@ export default function Header() {
           {/* Phone Number - Right */}
           <div className="hidden md:flex w-1/4 justify-end">
             <a className="font-oswald text-sky-700 font-bold whitespace-nowrap">
-              support@techhavens.com
+              info@techhaven.com
             </a>
           </div>
 
@@ -145,7 +146,7 @@ export default function Header() {
               Contact Us
             </Link>
             <a className="font-oswald text-sky-700 font-bold">
-              support@amazonlegacypress.com
+              info@techhaven.com
             </a>
           </div>
         </div>
