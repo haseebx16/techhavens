@@ -4,12 +4,12 @@ import { font } from './fonts/font'
 const Identity = () => {
   return (
     <div className={`${font.className} md:p-16 p-8 z-10 flex flex-col md:flex-row md:justify-center md:items-center`}>
-        <section className='w-[50%]'>
-            <div>
+        <section className='md:w-[50%] w-[100%] z-20 md:mr-12 flex flex-col justify-center items-center'>
+            
                 <img src='/laptop.png'/>
-            </div>
+            
         </section>
-        <section className='md:w-[50%] w-full'>
+        <section className='md:w-[50%] w-full z-20'>
             <div>
                 <p className='md:text-3xl text-2xl uppercase text-cyan-500'>Tech Haven PVT LTD--</p>
                 <h1 className='md:text-5xl text-3xl font-bold text-black mt-6'>To Be The Blueprint for Your Digital Identity.</h1>

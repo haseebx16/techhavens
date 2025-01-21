@@ -29,11 +29,11 @@ const WhyChooseUs = () => {
                         <h1 className='text-2xl font-bold text-justify'> ONLY THE BEST OF THE BEST</h1>
                         <p className=' text-justify pt-4'>Our vision is to be the best in the industry and to provide the best possible service to our clients.</p>
                     </div>
-                    <div className='p-4 py-12 rounded-md z-20 text-black bg-cards hover:bg-cyan-500 hover:text-white duration-300'>
+                    <div className='p-4 py-12 rounded-md z-20 text-black bg-cards hover:bg-cyan-400 hover:text-white duration-300'>
                         <h1 className='text-2xl  font-bold text-justify'>FUTURE-PROOFED TALENT                        </h1>
                         <p className=' text-justify pt-4'>Our mission is to provide the best possible service to our clients and to help them achieve their goals.</p>
                     </div>
-                    <div className='p-4 py-12 rounded-md z-20 text-black bg-cards hover:bg-cyan-500 hover:text-white duration-300'>
+                    <div className='p-4 py-12 rounded-md z-20 text-black bg-cards hover:bg-cyan-400 hover:text-white duration-300'>
                         <h1 className='text-2xl  font-bold text-justify'>EXCEPTIONAL PROFESSIONALISM                        </h1>
                         <p className=' text-justify pt-4'>Our vision is to be the best in the industry and to provide the best possible service to our clients.</p>
                     </div>
