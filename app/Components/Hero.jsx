@@ -71,13 +71,13 @@ export default function Hero() {
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
           {/* Text Content */}
           <div className="text-white max-w-2xl">
-            <h2 className="font-oswald text-lg md:text-xl mb-4 text-cyan-300 uppercase font-medium tracking-wider">
+            <h2 className="font-oswald text-lg md:text-xl mb-4 text-cards uppercase font-medium tracking-wider">
               Tech Haven - Crafting Excellence, Providing Growth
             </h2>
             <h1 className="font-oswald text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-wide">
               YOUR PATHWAY TO TURNING LITERARY DREAMS INTO REALITY
             </h1>
-            <button className="btn-primary text-lg uppercase tracking-wider">
+            <button className="btn-primary bg-cards text-black text-lg uppercase tracking-wider">
               DISCOVER MORE
             </button>
           </div>
@@ -116,7 +116,7 @@ export default function Hero() {
               ></textarea>
               <button
                 type="submit"
-                className="btn-primary w-full uppercase tracking-wider"
+                className="btn-primary bg-cards text-black w-full uppercase tracking-wider"
               >
                 SEND MESSAGE
               </button>

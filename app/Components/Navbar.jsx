@@ -109,9 +109,9 @@ export default function Header() {
             <Link href="/" className="nav-link">
               Home
             </Link>
-            <Link href="/about" className="nav-link">
+            {/* <Link href="/about" className="nav-link">
               About Us
-            </Link>
+            </Link> */}
             <div>
               <button 
                 onClick={() => setIsServicesOpen(!isServicesOpen)}
@@ -136,12 +136,12 @@ export default function Header() {
                 </div>
               )}
             </div>
-            <Link href="/testimonials" className="nav-link">
+            {/* <Link href="/testimonials" className="nav-link">
               Testimonials
             </Link>
             <Link href="/portfolio" className="nav-link">
               Portfolio
-            </Link>
+            </Link> */}
             <Link href="/contact" className="nav-link">
               Contact Us
             </Link>
