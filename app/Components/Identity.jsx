@@ -1,13 +1,28 @@
-import React from 'react'
+"use client";
+
+import React, { useEffect, useRef } from 'react'
 import { font } from './fonts/font'
+import Parallax from 'parallax-js';
 
 const Identity = () => {
+
+    const parallaxContainer = useRef(null);
+    
+      useEffect(() => {
+        const parallaxInstance = new Parallax(parallaxContainer.current, {
+          relativeInput: true,
+        });
+        return () => {
+          parallaxInstance.destroy();
+        };
+      }, []);
+
   return (
     <div className={`${font.className} md:p-16 p-8 z-10 flex flex-col md:flex-row md:justify-center md:items-center`}>
-        <section className='md:w-[50%] w-[100%] z-20 md:mr-12 flex flex-col justify-center items-center'>
-            
-                <img src='/laptop.png'/>
-            
+        <section className="md:w-[50%] w-[100%] z-20 md:mr-12 flex flex-col justify-center items-center" ref={parallaxContainer}>
+            <div data-depth="0.2">
+                <img src="/laptop.png" alt="img" />
+            </div>
         </section>
         <section className='md:w-[50%] w-full z-20'>
             <div>
