@@ -22,9 +22,9 @@ export default function Header() {
         <div className="flex items-center">
           {/* Logo - Left */}
           <div className="w-1/4 p-6">
-            <Link href="/" className="font-oswald text-2xl font-bold text-sky-700">
+            <Link href="/" className="font-oswald  font-bold text-sky-700">
               <span className="flex items-center">
-                <img src='/header.png' style={{ width: "300px", height: "60px" }}/>
+                <img src='/logo.png' style={{ width: "200px", height: "50px", zIndex: 50 }}/>
               </span>
             </Link>
           </div>
