@@ -18,7 +18,7 @@ const Think = () => {
 
   return (
     <div
-      className={`${font.className} md:p-16 p-8 flex flex-col md:flex-row md:justify-center md:items-center`}
+      className={`${font.className} md:p-16 overflow-hidden p-8 flex flex-col md:flex-row md:justify-center md:items-center`}
     >
       <section className="md:w-[50%] w-[100%] z-20 md:mr-12 flex flex-col justify-center items-center" ref={parallaxContainer}>
         <div data-depth="0.2">

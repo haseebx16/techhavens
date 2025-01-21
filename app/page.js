@@ -5,6 +5,7 @@ import Think from "./Components/Think";
 import Identity from "./Components/Identity";
 import Choose from "./Components/Choose";
 import WhyChooseUs from "./Components/WhyChooseUs";
+import Client from "./Components/Client";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Think/>
       <WhyChooseUs/>
       <Identity/>
+      <Client/>
       <Choose/>
    </div>
   );
