@@ -17,7 +17,7 @@ export default function Header() {
   ];
 
   return (
-    <header className={`${font.className} bg-customBlue shadow-md  top-0 z-50`}>
+    <header className={`${font.className} bg-customBlue shadow-md relative top-0 z-50`}>
       <nav className="max-w-[1400px] mx-auto px-2">
         <div className="flex items-center">
           {/* Logo - Left */}
@@ -87,7 +87,7 @@ export default function Header() {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden text-black ml-auto">
+          <div className="md:hidden text-cards ml-auto">
             <button 
               className="p-2"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -104,9 +104,9 @@ export default function Header() {
         </div>
 
         {/* Mobile Menu */}
-        <div className={`${isMenuOpen ? 'block' : 'hidden'} md:hidden absolute top-full left-0 right-0 bg-white shadow-md`}>
+        <div className={`${isMenuOpen ? 'block' : 'hidden'} md:hidden absolute top-full left-0 right-0 bg-customBlue shadow-md`}>
           <div className="flex flex-col p-4 space-y-4">
-            <Link href="/" className="nav-link">
+            <Link href="/" className="nav-link text-cards">
               Home
             </Link>
             {/* <Link href="/about" className="nav-link">
@@ -115,7 +115,7 @@ export default function Header() {
             <div>
               <button 
                 onClick={() => setIsServicesOpen(!isServicesOpen)}
-                className="nav-link w-full text-left flex items-center justify-between"
+                className="nav-link w-full text-left flex items-center text-white justify-between"
               >
                 Services
                 <svg className={`w-4 h-4 transform ${isServicesOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -128,7 +128,7 @@ export default function Header() {
                     <Link 
                       key={index}
                       href={`/services/${service.toLowerCase().replace(/\s+/g, '')}`}
-                      className="block py-1 text-sm text-gray-600 hover:text-sky-700"
+                      className="block py-1 text-sm text-cards hover:text-sky-700"
                     >
                       {service}
                     </Link>
@@ -142,10 +142,10 @@ export default function Header() {
             <Link href="/portfolio" className="nav-link">
               Portfolio
             </Link> */}
-            <Link href="/contact" className="nav-link">
+            <Link href="/contact" className="nav-link text-white">
               Contact Us
             </Link>
-            <a className="font-oswald text-sky-700 font-bold">
+            <a className="font-oswald text-cards font-bold">
               info@techhaven.com
             </a>
           </div>
