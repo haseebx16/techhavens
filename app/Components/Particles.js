@@ -1,3 +1,5 @@
+"use client";
+
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { useEffect, useMemo, useState } from "react";
 import { loadSlim } from "@tsparticles/slim";
@@ -34,7 +36,7 @@ const ParticlesCX = () => {
       color: { value: "#FFFFFF" },
       links: { color: "#FFFFFF", distance: 150, enable: true, opacity: 0.3, width: 1 },
       move: { enable: true, speed: 1, outModes: { default: "bounce" } },
-      number: { value: 250, density: { enable: true } },
+      number: { value: 150, density: { enable: true } },
       opacity: { value: 1.0 },
       shape: { type: "circle" },
       size: { value: { min: 1, max: 3 } },

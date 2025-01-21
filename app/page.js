@@ -4,6 +4,7 @@ import Hero from "./Components/Hero";
 import Think from "./Components/Think";
 import Identity from "./Components/Identity";
 import Choose from "./Components/Choose";
+import WhyChooseUs from "./Components/WhyChooseUs";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Header/>
       <Hero/>
       <Think/>
+      <WhyChooseUs/>
       <Identity/>
       <Choose/>
    </div>

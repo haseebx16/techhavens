@@ -10,6 +10,9 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        customBlue: "#040e56",
+        card1: "#497dff",
+        cards: "#56ffbd",
       },
     },
   },

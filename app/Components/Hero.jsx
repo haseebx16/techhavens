@@ -61,7 +61,7 @@ export default function Hero() {
   }
 
   return (
-    <section className={`${font.className} relative bg-blue-800 min-h-[24rem] p-12 overflow-hidden`}>
+    <section className={`${font.className} relative bg-customBlue min-h-[24rem] p-12 overflow-hidden`}>
       <div className="absolute top-0 left-0 w-full h-full z-0">
         <ParticlesCX className="absolute inset-0 w-full h-full" /> {/* Particle component */}
         </div>
