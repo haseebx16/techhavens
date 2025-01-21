@@ -43,44 +43,40 @@ export default function Header() {
               <Link href="/" className="nav-link text-cards">
                 Home
               </Link>
-              {/* <Link href="/about" className="nav-link hover:text-cyan-500">
-                About Us
-              </Link> */}
+             
               <div className="relative group">
-                <button 
-                  className="nav-link text-white hover:text-cards flex items-center"
+              <button 
+                className="nav-link text-white hover:text-cards flex items-center"
+                onMouseEnter={() => setIsServicesOpen(true)}
+                onMouseLeave={() => setIsServicesOpen(false)}
+              >
+                Services
+                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              
+              {isServicesOpen && (
+                <div 
+                  className="absolute top-full left-0 transform bg-white shadow-lg rounded-lg py-2 w-64 z-50 overflow-visible"
                   onMouseEnter={() => setIsServicesOpen(true)}
                   onMouseLeave={() => setIsServicesOpen(false)}
+                  style={{zIndex: 9999}}
                 >
-                  Services
-                  <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
-                  </svg>
-                </button>
-                {isServicesOpen && (
-                  <div 
-                    className="absolute top-full left-1/2 transform -translate-x-1/2 bg-white shadow-lg rounded-lg py-2 w-64 z-50"
-                    onMouseEnter={() => setIsServicesOpen(true)}
-                    onMouseLeave={() => setIsServicesOpen(false)}
-                  >
-                    {services.map((service, index) => (
-                      <Link 
-                        key={index} 
-                        href={`/services/${service.toLowerCase().replace(/\s+/g, '')}`}
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-sky-100 hover:text-sky-700"
-                      >
-                        {service}
-                      </Link>
-                    ))}
-                  </div>
-                )}
-              </div>
-              {/* <Link href="/testimonials" className="nav-link hover:text-cyan-500">
-                Testimonials
-              </Link>
-              <Link href="/portfolio" className="nav-link hover:text-cyan-500">
-                Portfolio
-              </Link> */}
+                  {services.map((service, index) => (
+                    <Link 
+                      key={index} 
+                      href={`/services/${service.toLowerCase().replace(/\s+/g, '')}`}
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-sky-100 hover:text-sky-700"
+                      style={{zIndex: 9999}}
+                    >
+                      {service}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+              
               <Link href="/contact" className="nav-link text-white hover:text-cards">
                 Contact Us
               </Link>
