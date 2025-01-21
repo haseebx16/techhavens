@@ -61,7 +61,7 @@ export default function Hero() {
   }
 
   return (
-    <section className={`${font.className} relative bg-customBlue min-h-[24rem] p-12 overflow-hidden`}>
+    <section className={`${font.className} relative bg-customBlue min-h-screen p-12 overflow-hidden`}>
       <div className="absolute top-0 left-0 w-full h-full z-0">
         <ParticlesCX className="absolute inset-0 w-full h-full" /> {/* Particle component */}
         </div>
@@ -77,7 +77,7 @@ export default function Hero() {
             <h1 className="font-oswald text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-wide">
               YOUR PATHWAY TO TURNING LITERARY DREAMS INTO REALITY
             </h1>
-            <button className="btn-primary bg-cards text-black text-lg uppercase tracking-wider">
+            <button className="btn-primary hover:text-white hover:bg-card1 bg-cards text-black text-lg uppercase tracking-wider">
               DISCOVER MORE
             </button>
           </div>
@@ -116,7 +116,7 @@ export default function Hero() {
               ></textarea>
               <button
                 type="submit"
-                className="btn-primary bg-cards text-black w-full uppercase tracking-wider"
+                className="btn-primary bg-cards hover:text-white hover:bg-card1 text-black w-full uppercase tracking-wider"
               >
                 SEND MESSAGE
               </button>

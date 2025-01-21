@@ -17,7 +17,7 @@ export default function Header() {
   ];
 
   return (
-    <header className={`${font.className} bg-white shadow-md sticky top-0 z-50`}>
+    <header className={`${font.className} bg-customBlue shadow-md  top-0 z-50`}>
       <nav className="max-w-[1400px] mx-auto px-2">
         <div className="flex items-center">
           {/* Logo - Left */}
@@ -32,7 +32,7 @@ export default function Header() {
           {/* Desktop Navigation - Center */}
           <div className="hidden md:flex justify-center w-2/4">
             <div className="flex space-x-6">
-              <Link href="/" className="nav-link hover:text-cyan-500">
+              <Link href="/" className="nav-link text-cards">
                 Home
               </Link>
               {/* <Link href="/about" className="nav-link hover:text-cyan-500">
@@ -40,7 +40,7 @@ export default function Header() {
               </Link> */}
               <div className="relative group">
                 <button 
-                  className="nav-link hover:text-cyan-500 flex items-center"
+                  className="nav-link text-white hover:text-cards flex items-center"
                   onMouseEnter={() => setIsServicesOpen(true)}
                   onMouseLeave={() => setIsServicesOpen(false)}
                 >
@@ -73,7 +73,7 @@ export default function Header() {
               <Link href="/portfolio" className="nav-link hover:text-cyan-500">
                 Portfolio
               </Link> */}
-              <Link href="/contact" className="nav-link hover:text-cyan-500">
+              <Link href="/contact" className="nav-link text-white hover:text-cards">
                 Contact Us
               </Link>
             </div>
@@ -81,7 +81,7 @@ export default function Header() {
 
           {/* Phone Number - Right */}
           <div className="hidden md:flex w-1/4 justify-end">
-            <a className="font-oswald text-sky-700 font-bold whitespace-nowrap">
+            <a className="font-oswald text-cards font-bold whitespace-nowrap">
               info@techhaven.com
             </a>
           </div>
