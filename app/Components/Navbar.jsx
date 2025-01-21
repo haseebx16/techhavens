@@ -21,10 +21,18 @@ export default function Header() {
       <nav className="max-w-[1400px] mx-auto px-2">
         <div className="flex items-center">
           {/* Logo - Left */}
-          <div className="w-1/4 p-6">
+          <div className="w-1/4 md:block hidden p-6">
             <Link href="/" className="font-oswald  font-bold text-sky-700">
               <span className="flex items-center">
                 <img src='/logo.png' style={{ width: "200px", height: "50px", zIndex: 50 }}/>
+              </span>
+            </Link>
+          </div>
+
+          <div className="w-full md:hidden block p-6">
+            <Link href="/" className="font-oswald  font-bold text-sky-700">
+              <span className="flex items-center">
+                <img src='/logo.png' style={{ width: "150px", height: "40px", zIndex: 50 }}/>
               </span>
             </Link>
           </div>

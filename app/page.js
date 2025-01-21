@@ -6,6 +6,7 @@ import Identity from "./Components/Identity";
 import Choose from "./Components/Choose";
 import WhyChooseUs from "./Components/WhyChooseUs";
 import Client from "./Components/Client";
+import Testimonials from "./Components/Testimonials";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Identity/>
       <Client/>
       <Choose/>
+      <Testimonials/>
    </div>
   );
 }
