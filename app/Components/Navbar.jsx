@@ -40,7 +40,7 @@ export default function Header() {
           {/* Desktop Navigation - Center */}
           <div className="hidden md:flex justify-center w-2/4">
             <div className="flex space-x-6">
-              <Link href="/" className="nav-link text-cards">
+              <Link href="/" className="nav-link text-white hover:text-cards">
                 Home
               </Link>
              
@@ -110,7 +110,7 @@ export default function Header() {
         {/* Mobile Menu */}
         <div className={`${isMenuOpen ? 'block' : 'hidden'} md:hidden absolute top-full left-0 right-0 bg-customBlue shadow-md`}>
           <div className="flex flex-col p-4 space-y-4">
-            <Link href="/" className="nav-link text-cards">
+            <Link href="/" className="nav-link text-white hover:text-cards">
               Home
             </Link>
             {/* <Link href="/about" className="nav-link">

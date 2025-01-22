@@ -16,7 +16,7 @@ const PageTransition = ({ onAnimationComplete }) => {
       initial={{ x: '-100%' }}
       animate={controls}
       exit={{ x: '100%' }}
-      transition={{ duration: 0.7 }}
+      transition={{ duration: 1 }}
       onAnimationComplete={onAnimationComplete}
       style={{
         position: 'fixed',
@@ -25,9 +25,22 @@ const PageTransition = ({ onAnimationComplete }) => {
         width: '100%',
         height: '100%',
         backgroundColor: 'black',
-        zIndex: 9999,
+        zIndex: 50,
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
       }}
-    />
+      
+    >
+        <img
+            src="/logo.png" // Replace with your logo path
+            alt="Logo"
+            style={{
+            width: "800px", // Adjust the size of the logo
+            height: "auto",
+            }}
+        />
+  </motion.div>
   );
 };
 
