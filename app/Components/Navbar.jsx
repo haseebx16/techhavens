@@ -10,7 +10,7 @@ export default function Header() {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
 
   const services = [
-    'UI/UX Designing',
+    'UI UX Designing',
     'Web Development',
     'App Development',
     'Graphics Designing',
