@@ -1,138 +1,157 @@
 "use client";
 
 import Link from 'next/link';
-import Image from 'next/image';
-import { font } from './fonts/font';
 import { useState } from 'react';
+import { font } from './fonts/font';
 
 export default function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const services = [
     'UI UX Designing',
     'Web Development',
     'App Development',
     'Graphics Designing',
+    "Ebook Services",
+    "Payment Merchant Services"
   ];
 
   return (
-    <header className={`${font.className} bg-customBlue  relative top-0 md:z-0 z-50`}>
-      <nav className="max-w-[1400px] mx-auto px-2">
+    <header className={`${font.className} bg-customBlue relative top-0 w-full`}>
+      <nav className="max-w-[1400px] mx-auto px-4 py-4 flex items-center justify-between">
+        {/* Logo */}
         <div className="flex items-center">
-          {/* Logo - Left */}
-          <div className="w-1/4 md:block hidden p-6">
-            <Link href="/" className="font-oswald  font-bold text-sky-700">
-              <span className="flex items-center">
-                <img src='/logo.png' style={{ width: "200px", height: "50px", zIndex: 50 }}/>
-              </span>
-            </Link>
-          </div>
-
-          <div className="w-full md:hidden block p-6">
-            <Link href="/" className="font-oswald  font-bold text-sky-700">
-              <span className="flex items-center">
-                <img src='/logo.png' style={{ width: "150px", height: "40px", zIndex: 50 }}/>
-              </span>
-            </Link>
-          </div>
-
-          {/* Desktop Navigation - Center */}
-          <div className="hidden md:flex justify-center w-2/4">
-            <div className="flex space-x-6">
-              <Link href="/" className="nav-link text-white hover:text-cards">
-                Home
-              </Link>
-             
-              <div className="relative group">
-              <button 
-                className="nav-link text-white hover:text-cards flex items-center"
-                onMouseEnter={() => setIsServicesOpen(true)}
-                onMouseLeave={() => setIsServicesOpen(false)}
-              >
-                Services
-                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-              
-              {isServicesOpen && (
-                <div 
-                  className="absolute top-full left-0 transform bg-white shadow-lg rounded-lg py-2 w-64 z-50 overflow-visible"
-                  onMouseEnter={() => setIsServicesOpen(true)}
-                  onMouseLeave={() => setIsServicesOpen(false)}
-                  style={{zIndex: 9999}}
-                >
-                  {services.map((service, index) => (
-                    <Link 
-                      key={index} 
-                      href={`/services/${service.toLowerCase().replace(/\s+/g, '')}`}
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-sky-100 hover:text-sky-700"
-                      style={{zIndex: 9999}}
-                    >
-                      {service}
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
-              
-              <Link href="/contact" className="nav-link text-white hover:text-cards">
-                Contact Us
-              </Link>
-            </div>
-          </div>
-
-          {/* Phone Number - Right */}
-          <div className="hidden md:flex w-1/4 justify-end">
-            <a className="font-oswald text-cards font-bold whitespace-nowrap">
-              info@techhaven.com
-            </a>
-          </div>
-
-          {/* Mobile Menu Button */}
-          <div className="md:hidden text-cards ml-auto">
-            <button 
-              className="p-2"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-            >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                {isMenuOpen ? (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                ) : (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                )}
-              </svg>
-            </button>
-          </div>
+          <Link href="/">
+            <img
+              src="/logo.png"
+              alt="Logo"
+              className="w-48 h-auto"
+            />
+          </Link>
         </div>
 
-        {/* Mobile Menu */}
-        <div className={`${isMenuOpen ? 'block' : 'hidden'} md:hidden absolute top-full left-0 right-0 bg-customBlue shadow-md`}>
+        {/* Navigation Links */}
+        <div className="hidden md:flex space-x-6 items-center">
+          <Link href="/" className="text-white hover:text-cards transition">
+            Home
+          </Link>
+
+          <div 
+            className="relative group"
+            onMouseEnter={() => setIsServicesOpen(true)}
+            onMouseLeave={() => setIsServicesOpen(false)}
+          >
+            <button 
+              className="nav-link text-white hover:text-cards flex items-center"
+            >
+              Services
+              <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            
+            {isServicesOpen && (
+              <div 
+                className="absolute top-full left-0 transform bg-white shadow-lg rounded-lg py-2 w-64 z-50 overflow-visible"
+              >
+                {services.map((service, index) => (
+                  <Link 
+                    key={index} 
+                    href={`/services/${service.toLowerCase().replace(/\s+/g, '')}`}
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-sky-100 hover:text-sky-700"
+                  >
+                    {service}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+
+          <Link href="/contact" className="text-white hover:text-cards transition">
+            Contact Us
+          </Link>
+        </div>
+
+        {/* Contact Info */}
+        <div className="hidden md:flex items-center text-cards font-bold">
+          <a href="mailto:info@techhaven.com" className="hover:text-white">
+            info@techhaven.com
+          </a>
+        </div>
+
+        {/* Mobile Menu Button */}
+        <div className="md:hidden">
+          <button
+            className="text-white"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              {isMenuOpen ? (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              ) : (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              )}
+            </svg>
+          </button>
+        </div>
+      </nav>
+
+      {/* Mobile Menu */}
+      {isMenuOpen && (
+        <div className="md:hidden bg-customBlue w-full shadow-md">
           <div className="flex flex-col p-4 space-y-4">
-            <Link href="/" className="nav-link text-white hover:text-cards">
+            <Link
+              href="/"
+              className="text-white hover:text-cards transition"
+              onClick={() => setIsMenuOpen(false)}
+            >
               Home
             </Link>
-            {/* <Link href="/about" className="nav-link">
-              About Us
-            </Link> */}
+
             <div>
-              <button 
+              <button
                 onClick={() => setIsServicesOpen(!isServicesOpen)}
-                className="nav-link w-full text-left flex items-center text-white justify-between"
+                className="w-full text-left flex items-center text-white justify-between"
               >
                 Services
-                <svg className={`w-4 h-4 transform ${isServicesOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                <svg
+                  className={`w-4 h-4 transform ${isServicesOpen ? 'rotate-180' : ''}`}
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M19 9l-7 7-7-7"
+                  />
                 </svg>
               </button>
               {isServicesOpen && (
                 <div className="pl-4 mt-2 space-y-2">
                   {services.map((service, index) => (
-                    <Link 
+                    <Link
                       key={index}
                       href={`/services/${service.toLowerCase().replace(/\s+/g, '')}`}
                       className="block py-1 text-sm text-cards hover:text-sky-700"
+                      onClick={() => setIsMenuOpen(false)}
                     >
                       {service}
                     </Link>
@@ -140,21 +159,24 @@ export default function Header() {
                 </div>
               )}
             </div>
-            {/* <Link href="/testimonials" className="nav-link">
-              Testimonials
-            </Link>
-            <Link href="/portfolio" className="nav-link">
-              Portfolio
-            </Link> */}
-            <Link href="/contact" className="nav-link text-white">
+
+            <Link
+              href="/contact"
+              className="text-white hover:text-cards transition"
+              onClick={() => setIsMenuOpen(false)}
+            >
               Contact Us
             </Link>
-            <a className="font-oswald text-cards font-bold">
+
+            <a
+              href="mailto:info@techhaven.com"
+              className="text-cards font-bold hover:text-white"
+            >
               info@techhaven.com
             </a>
           </div>
         </div>
-      </nav>
+      )}
     </header>
   );
 }
