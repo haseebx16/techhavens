@@ -16,7 +16,7 @@ const PageTransition = ({ onAnimationComplete }) => {
       initial={{ x: '-100%' }}
       animate={controls}
       exit={{ x: '100%' }}
-      transition={{ duration: 1.5 }}
+      transition={{ duration: 0.7 }}
       onAnimationComplete={onAnimationComplete}
       style={{
         position: 'fixed',

@@ -35,7 +35,7 @@ const ParticlesCX = () => {
     particles: {
       color: { value: "#FFFFFF" },
       links: { color: "#FFFFFF", distance: 150, enable: true, opacity: 0.3, width: 1 },
-      move: { enable: true, speed: 1, outModes: { default: "bounce" } },
+      move: { enable: true, speed: 0.5, outModes: { default: "bounce" } },
       number: { value: 200, density: { enable: true } },
       opacity: { value: 1.0 },
       shape: { type: "circle" },
