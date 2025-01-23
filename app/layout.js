@@ -67,7 +67,8 @@ export default function RootLayout({ children }) {
               position: isHomePage ? 'relative' : 'initial',
               zIndex: isHomePage ? 'auto' : 10,
             }}
-            id="main-container" // The scrollable container
+            id="main-container"
+            className="overflow-hidden" // The scrollable container
           >
             {children}
           </div>
