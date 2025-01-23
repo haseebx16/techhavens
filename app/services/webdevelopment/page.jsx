@@ -95,7 +95,7 @@ const page = () => {
               Tech Haven - Crafting Excellence, Providing Growth
             </h2>
             <h1 className="font-oswald text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-wide">
-              UI/UX Desigining Services
+              Web Development Services
             </h1>
           </div>
         </div>
@@ -106,9 +106,9 @@ const page = () => {
     >
       <section className="md:w-[50%] w-[100%] z-20 md:mr-12 flex flex-col justify-center items-center">
       <div>
-          <p className="md:text-5xl text-2xl uppercase text-cards">Hire the best UI/UX Designers</p>
+          <p className="md:text-5xl text-2xl uppercase text-cards">Hire the best Website Developers</p>
           <p className="text-3xl text-customBlue font-bold mt-6">
-          Transform Your Business with Top-Notch Talent - Hire the Best Designers Today
+          Transform Your Business with Top-Notch Development Skills - Hire the Best Developers Today
           </p>
           
         </div>
@@ -117,13 +117,13 @@ const page = () => {
         <div>
           
           <p className="text-md text-gray-600 mt-6">
-          Are you in need of a skilled UI/UX Designer or team to bring your web application idea to life? Look no further than Tech Haven.
+          Are you in need of a skilled Developer or team to bring your web application idea to life? Look no further than Tech Haven.
           </p>
           <p className="text-md text-gray-600 mt-6">
-          As a leading development agency, we have a network of experienced UI/UX Designer that we can connect you with. No matter what your needs are, we can help you find the right fit for your project.
+          As a leading development agency, we have a network of experienced Web Developers that we can connect you with. No matter what your needs are, we can help you find the right fit for your project.
           </p>
           <p className="text-md text-gray-600 mt-6">
-          With our dedicated model, you’ll have a dedicated Designer or team working on your project full-time, ensuring that your project stays on track and on schedule. And with our flexible hiring options, you can choose the level of support that best fits your needs and budget.
+          With our dedicated model, you’ll have a dedicated Developer or team working on your project full-time, ensuring that your project stays on track and on schedule. And with our flexible hiring options, you can choose the level of support that best fits your needs and budget.
           </p>
           <button className="btn-primary bg-cards text-black hover:text-white hover:bg-card1 mt-6">
             Let's Connect
