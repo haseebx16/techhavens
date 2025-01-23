@@ -15,19 +15,19 @@ const Realm = () => {
 
     gsap.fromTo(
       element,
-      { scale: 1, padding: "3rem", height: "auto", width: "100%", zIndex: 20 }, // Default state
+      { scale: 1, padding: "3rem", height: "auto", width: "100%", zIndex: 20 },
       {
-        scale: 1.5, // Zoom-in effect
-        padding: "0", // Remove padding
-        height: "100vh", // Fullscreen height
-        width: "100vw", // Fullscreen width
+        scale: 1.5, 
+        padding: "0", 
+        height: "100vh",
+        width: "100vw",
         duration: 1,
         ease: "power2.out",
         scrollTrigger: {
           trigger: element,
-          start: "top center", // Trigger when section is fully in viewport
-          end: "top center", // End immediately after triggering
-          toggleActions: "play none none reverse", // Play animation when entering and reverse on exit
+          start: "top center",
+          end: "top center",
+          toggleActions: "play none none reverse",
         },
       }
     );
