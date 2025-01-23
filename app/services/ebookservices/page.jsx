@@ -95,7 +95,7 @@ const page = () => {
               Tech Haven - Crafting Excellence, Providing Growth
             </h2>
             <h1 className="font-oswald text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-wide">
-              Graphics Desigining Services
+              Ebook Services We Offer
             </h1>
           </div>
         </div>
@@ -106,9 +106,9 @@ const page = () => {
     >
       <section className="md:w-[50%] w-[100%] z-20 md:mr-12 flex flex-col justify-center items-center">
       <div>
-          <p className="md:text-5xl text-2xl uppercase text-cards">Hire the best Graphics Designers</p>
+          <p className="md:text-5xl text-2xl uppercase text-cards">Hire the best Ghostwriters</p>
           <p className="text-3xl text-customBlue font-bold mt-6">
-          Transform Your Business with Top-Notch Talent - Hire the Best Graphics Designers Today
+          Transform Your Business with Our Top-Notch Ghostwriting Skills - Hire the Best Ghostwriters Today
           </p>
           
         </div>
@@ -117,7 +117,7 @@ const page = () => {
         <div>
           
           <p className="text-md text-gray-600 mt-6">
-          Are you in need of a skilled Graphics Designer or team to bring your designed idea to life? Look no further than Tech Haven.
+          Are you in need of a skilled Ghostwriter or team to bring your book idea to life? Look no further than Tech Haven.
           </p>
           
           <button className="btn-primary bg-cards text-black hover:text-white hover:bg-card1 mt-6">
