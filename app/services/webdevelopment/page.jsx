@@ -132,8 +132,8 @@ const page = () => {
       </section>
     </div>
     <WhyChooseUs/>
-    <Connect/>
     <Client/>
+    <Connect/>
         <Footer/>
     </div>
   )
