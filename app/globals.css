@@ -75,3 +75,19 @@ body {
 .glow-text {
   text-shadow: 0 0 10px #ffffff, 0 0 2px #00ffcc, 0 0 3px #00ffcc;
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #56ffbd;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #50dbf3;
+}
