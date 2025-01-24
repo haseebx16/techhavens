@@ -6,7 +6,7 @@ import { AnimatePresence } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import PageTransition from './Components/PageTransition';
-import Lenis from 'lenis'; // Import Lenis
+import Lenis from 'lenis';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,6 +20,7 @@ const geistMono = Geist_Mono({
 
 export default function RootLayout({ children }) {
   const [isAnimating, setIsAnimating] = useState(true);
+  const [isLoaded, setIsLoaded] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
@@ -31,11 +32,11 @@ export default function RootLayout({ children }) {
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const lenis = new Lenis({
-        duration: 0.8, // Adjust scroll duration for smoothness
-        easing: (t) => t * (2 - t), // Easing function for smooth scroll
-        smoothWheel: true, // Enable smooth wheel scrolling
-        smoothTouch: true, // Enable smooth touch scrolling for mobile devices
-        direction: 'vertical', // Scroll direction (can be 'vertical' or 'horizontal')
+        duration: 0.8, 
+        easing: (t) => t * (2 - t), 
+        smoothWheel: true, 
+        smoothTouch: true, 
+        direction: 'vertical', 
       });
 
       function raf(time) {
@@ -46,7 +47,7 @@ export default function RootLayout({ children }) {
       requestAnimationFrame(raf);
 
       return () => {
-        lenis.destroy(); // Clean up the scroll instance on unmount
+        lenis.destroy();
       };
     }
   }, []);
@@ -68,7 +69,7 @@ export default function RootLayout({ children }) {
               zIndex: isHomePage ? 'auto' : 10,
             }}
             id="main-container"
-            className="overflow-hidden" // The scrollable container
+            className="overflow-hidden"
           >
             {children}
           </div>

@@ -10,10 +10,12 @@ import Testimonials from "./Components/Testimonials";
 import Connect from "./Components/Connect";
 import Footer from "./Components/Footer";
 import Realm from "./Components/Realm";
+import PreLoader from "./Components/PreLoader";
 
 export default function Home() {
   return (
    <div>
+      <PreLoader/>
       <Header/>
       <Hero/>
       <Realm/>
