@@ -47,12 +47,13 @@ export default function Header() {
           </Link>
 
           <div 
-            className="relative group" data-aos="fade-up"
+            className="relative group" 
             onMouseEnter={() => setIsServicesOpen(true)}
             onMouseLeave={() => setIsServicesOpen(false)}
           >
             <button 
               className="nav-link text-white hover:text-cards flex items-center"
+              data-aos="fade-up"
             >
               Services
               <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -63,13 +64,14 @@ export default function Header() {
             {isServicesOpen && (
               <div 
                 className="absolute top-full left-0 transform bg-white shadow-lg rounded-lg py-2 w-64 z-50 overflow-visible"
-                data-aos="fade-down"
+                
               >
                 {services.map((service, index) => (
                   <Link 
                     key={index} 
                     href={`/services/${service.toLowerCase().replace(/\s+/g, '')}`}
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-sky-100 hover:text-sky-700"
+                    data-aos="fade-down"
                   >
                     {service}
                   </Link>
