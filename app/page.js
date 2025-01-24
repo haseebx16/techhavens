@@ -9,7 +9,7 @@ import Client from "./Components/Client";
 import Testimonials from "./Components/Testimonials";
 import Connect from "./Components/Connect";
 import Footer from "./Components/Footer";
-import Realm from "./Components/About";
+import Realm from "./Components/Realm";
 
 export default function Home() {
   return (
