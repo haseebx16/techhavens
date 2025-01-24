@@ -78,7 +78,7 @@ const page = () => {
     <div>
         <Header/>
        
-    <section className={`${font.className} relative bg-customBlue min-h-[18rem] p-12 overflow-hidden`}>
+    <section className={`${font.className} relative bg-black min-h-[18rem] p-12 overflow-hidden`}>
       <div className="absolute top-0 left-0 w-full h-full z-0">
         <ParticlesCX className="absolute inset-0 w-full h-full" />
         </div>
@@ -98,10 +98,10 @@ const page = () => {
         </div>
       </div>
     </section>
-    <div className={`${font.className} flex flex-col mt-12 items-center md:items-center p-4`}>
+    <div className={`${font.className} flex flex-col bg-black items-center md:items-center p-4`}>
           <h1
             data-aos="fade-right"
-            className="text-3xl text-black md:text-5xl text-center md:max-w-4xl font-bold p-4"
+            className="text-3xl text-white md:text-5xl text-center md:max-w-4xl font-bold p-4"
           >
             Contact Us And Our Representative Will Reach Out To You
           </h1>
@@ -113,7 +113,7 @@ const page = () => {
             <div data-aos="fade-right" className="mb-4">
               <label
                 htmlFor="name"
-                className="block text-gray-700 font-semibold"
+                className="block text-white font-semibold"
               >
                 Name
               </label>
@@ -132,7 +132,7 @@ const page = () => {
             <div data-aos="fade-left" className="mb-4">
               <label
                 htmlFor="email"
-                className="block text-gray-700 font-semibold"
+                className="block text-white font-semibold"
               >
                 Email
               </label>
@@ -151,7 +151,7 @@ const page = () => {
             <div data-aos="fade-up-right" className="mb-4">
               <label
                 htmlFor="phone"
-                className="block text-gray-700 font-semibold"
+                className="block text-white font-semibold"
               >
                 Phone Number
               </label>
@@ -170,7 +170,7 @@ const page = () => {
             <div data-aos="fade-up-left" className="mb-4">
               <label
                 htmlFor="message"
-                className="block text-gray-700 font-semibold"
+                className="block text-white font-semibold"
               >
                 Message
               </label>

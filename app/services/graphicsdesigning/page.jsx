@@ -81,7 +81,7 @@ const page = () => {
     <div>
         <Header/>
        
-    <section className={`${font.className} relative bg-customBlue min-h-[18rem] p-12 overflow-hidden`}>
+    <section className={`${font.className} relative bg-black min-h-[18rem] p-12 overflow-hidden`}>
       <div className="absolute top-0 left-0 w-full h-full z-0">
         <ParticlesCX className="absolute inset-0 w-full h-full" />
         </div>
@@ -102,12 +102,12 @@ const page = () => {
       </div>
     </section>
     <div
-      className={`${font.className} md:p-16 overflow-hidden p-8 flex flex-col md:flex-row md:justify-center md:items-center`}
+      className={`${font.className} md:p-16 bg-black overflow-hidden p-8 flex flex-col md:flex-row md:justify-center md:items-center`}
     >
       <section className="md:w-[50%] w-[100%] z-20 md:mr-12 flex flex-col justify-center items-center">
       <div>
           <p className="md:text-5xl text-2xl uppercase text-cards">Hire the best Graphics Designers</p>
-          <p className="text-3xl text-customBlue font-bold mt-6">
+          <p className="text-3xl text-white font-bold mt-6">
           Transform Your Business with Top-Notch Talent - Hire the Best Graphics Designers Today
           </p>
           
@@ -116,7 +116,7 @@ const page = () => {
       <section className="md:w-[50%] md:pt-0 pt-12 z-20 w-full">
         <div>
           
-          <p className="text-md text-gray-600 mt-6">
+          <p className="text-md text-white mt-6">
           Are you in need of a skilled Graphics Designer or team to bring your designed idea to life? Look no further than Tech Haven.
           </p>
           

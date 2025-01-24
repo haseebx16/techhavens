@@ -81,7 +81,7 @@ const page = () => {
     <div>
         <Header/>
        
-    <section className={`${font.className} relative bg-customBlue min-h-[18rem] p-12 overflow-hidden`}>
+    <section className={`${font.className} relative bg-black min-h-[18rem] p-12 overflow-hidden`}>
       <div className="absolute top-0 left-0 w-full h-full z-0">
         <ParticlesCX className="absolute inset-0 w-full h-full" />
         </div>
@@ -102,12 +102,12 @@ const page = () => {
       </div>
     </section>
     <div
-      className={`${font.className} md:p-16 overflow-hidden p-8 flex flex-col md:flex-row md:justify-center md:items-center`}
+      className={`${font.className} md:p-16 bg-black overflow-hidden p-8 flex flex-col md:flex-row md:justify-center md:items-center`}
     >
       <section className="md:w-[50%] w-[100%] z-20 md:mr-12 flex flex-col justify-center items-center">
       <div>
           <p className="md:text-5xl text-2xl uppercase text-cards">Simplify Payments with Our Merchant Solutions</p>
-          <p className="text-3xl text-customBlue font-bold mt-6">
+          <p className="text-3xl text-white font-bold mt-6">
           Transform Your Business with Our Payment Merchants Services
           </p>
           
@@ -116,10 +116,10 @@ const page = () => {
       <section className="md:w-[50%] md:pt-0 pt-12 z-20 w-full">
         <div>
           
-          <p className="text-md text-gray-600 mt-6">
+          <p className="text-md text-white mt-6">
           Unlock seamless payment experiences with our advanced merchant service. Whether you're running a small business or managing enterprise-level transactions, our solution ensures fast, secure, and hassle-free payment processing to meet your business needs.
           </p>
-          <p className="text-md text-gray-600 mt-6">
+          <p className="text-md text-white mt-6">
           Our payment merchant service is built for businesses of all sizes. Enjoy end-to-end encryption, multi-currency support, and real-time analytics, empowering you to focus on growth while we handle the complexities of payment processing.
           </p>
           <button className="btn-primary bg-cards text-black hover:text-white hover:bg-card1 mt-6">

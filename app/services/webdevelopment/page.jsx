@@ -81,7 +81,7 @@ const page = () => {
     <div>
         <Header/>
        
-    <section className={`${font.className} relative bg-customBlue min-h-[18rem] p-12 overflow-hidden`}>
+    <section className={`${font.className} relative bg-black min-h-[18rem] p-12 overflow-hidden`}>
       <div className="absolute top-0 left-0 w-full h-full z-0">
         <ParticlesCX className="absolute inset-0 w-full h-full" />
         </div>
@@ -102,12 +102,12 @@ const page = () => {
       </div>
     </section>
     <div
-      className={`${font.className} md:p-16 overflow-hidden p-8 flex flex-col md:flex-row md:justify-center md:items-center`}
+      className={`${font.className} md:p-16 bg-black overflow-hidden p-8 flex flex-col md:flex-row md:justify-center md:items-center`}
     >
       <section className="md:w-[50%] w-[100%] z-20 md:mr-12 flex flex-col justify-center items-center">
       <div>
           <p className="md:text-5xl text-2xl uppercase text-cards">Hire the best Website Developers</p>
-          <p className="text-3xl text-customBlue font-bold mt-6">
+          <p className="text-3xl text-white font-bold mt-6">
           Transform Your Business with Top-Notch Development Skills - Hire the Best Developers Today
           </p>
           
@@ -116,13 +116,13 @@ const page = () => {
       <section className="md:w-[50%] md:pt-0 pt-12 z-20 w-full">
         <div>
           
-          <p className="text-md text-gray-600 mt-6">
+          <p className="text-md text-white mt-6">
           Are you in need of a skilled Developer or team to bring your web application idea to life? Look no further than Tech Haven.
           </p>
-          <p className="text-md text-gray-600 mt-6">
+          <p className="text-md text-white  mt-6">
           As a leading development agency, we have a network of experienced Web Developers that we can connect you with. No matter what your needs are, we can help you find the right fit for your project.
           </p>
-          <p className="text-md text-gray-600 mt-6">
+          <p className="text-md text-white mt-6">
           With our dedicated model, you’ll have a dedicated Developer or team working on your project full-time, ensuring that your project stays on track and on schedule. And with our flexible hiring options, you can choose the level of support that best fits your needs and budget.
           </p>
           <button className="btn-primary bg-cards text-black hover:text-white hover:bg-card1 mt-6">

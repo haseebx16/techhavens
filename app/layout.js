@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const lenis = new Lenis({
-        duration: 1.2, // Adjust scroll duration for smoothness
+        duration: 0.8, // Adjust scroll duration for smoothness
         easing: (t) => t * (2 - t), // Easing function for smooth scroll
         smoothWheel: true, // Enable smooth wheel scrolling
         smoothTouch: true, // Enable smooth touch scrolling for mobile devices
