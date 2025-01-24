@@ -98,7 +98,7 @@ const Realm = () => {
       <canvas ref={canvasRef} className="absolute top-0 left-0 z-0" />
 
       <div className="text-left px-12 w-full relative z-10 lg:w-1/2">
-        <p ref={contentRef} className="text-5xl md:pl-36 lg:pl-64 text-white glow-text">About Us</p>
+        <p ref={contentRef} className="text-5xl md:pl-36 lg:pl-64 text-white ">About Us</p>
         <div
           ref={contentRef}
           className="hidden-content mt-8 md:pl-36 lg:pl-64"
@@ -107,8 +107,8 @@ const Realm = () => {
             display: "none",
           }}
         >
-          <p className="text-4xl text-cards glow-text">What is Tech Haven?</p>
-          <p className="text-lg max-w-xl mt-4 text-white glow-text">
+          <p className="text-4xl text-cards ">What is Tech Haven?</p>
+          <p className="text-lg max-w-xl mt-4 text-white ">
             At Tech Haven, our agile and multi-disciplinary development teams
             have a well-defined methodology to deliver high-quality results. Our
             expertise spans a wide range of developmental projects, from UI/UX

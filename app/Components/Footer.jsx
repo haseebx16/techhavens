@@ -6,7 +6,7 @@ import { FaFacebook, FaLinkedin, FaInstagram } from 'react-icons/fa';
 const Footer = () => {
 
   return (
-    <footer className={`${font.className} bg-customBlue text-white  py-12 md:py-12`}>
+    <footer className={`${font.className} bg-black text-white  py-12 md:py-12`}>
       <div className="container mx-auto flex flex-wrap justify-evenly items-center space-y-6 md:space-y-0">
         <div className="flex flex-col items-start">
           <img src="/logo.png" alt="Logo" className="w-auto h-auto sm:h-10 md:h-28 lg:h-14" style={{ height: '50px', width: "200px" }} />

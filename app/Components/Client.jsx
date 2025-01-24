@@ -3,7 +3,7 @@ import { font } from './fonts/font'
 
 const Client = () => {
   return (  
-    <div className={`${font.className} py-8 md:p-16 p-8 flex flex-col md:flex-row bg-customBlue w-full`}>
+    <div className={`${font.className} py-8 md:p-16 p-8 flex flex-col md:flex-row bg-black w-full`}>
         <section className='md:w-[50%] w-full flex flex-col justify-start items-start'>
             <h1 className='md:text-3xl text-2xl text-cards font-extrabold'>Our Client</h1>
             <h1 className='md:text-5xl text-white text-3xl pt-4  font-extrabold'>We Work With An Extensive Clientele</h1>

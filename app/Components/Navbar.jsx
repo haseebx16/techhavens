@@ -18,7 +18,7 @@ export default function Header() {
   ];
 
   return (
-    <header className={`${font.className} bg-customBlue relative top-0 w-full`}>
+    <header className={`${font.className} bg-black relative top-0 w-full`}>
       <nav className="max-w-[1400px] mx-auto px-4 py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center">

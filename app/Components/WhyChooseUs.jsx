@@ -4,7 +4,7 @@ import ParticlesCX from './Particles'
 
 const WhyChooseUs = () => {
   return (
-    <div className={`${font.className} md:p-16 p-8 z-10 flex bg-customBlue flex-col md:flex-row md:justify-center md:items-center`}>
+    <div className={`${font.className} md:p-16 p-8 z-10 flex bg-black flex-col md:flex-row md:justify-center md:items-center`}>
         {/* <ParticlesCX/> */}
         <section className='md:w-[50%] w-full'>
             <div>

@@ -41,7 +41,7 @@ const Testimonials = () => {
 
   return (
     <div
-      className={`${font.className} py-8 md:p-16 p-8 flex flex-col justify-center items-center bg-customBlue w-full`}
+      className={`${font.className} py-8 md:p-16 p-8 flex flex-col justify-center items-center bg-black w-full`}
     >
       <section className="md:w-[100%] w-full flex flex-col justify-center items-center">
         <h1 className="md:text-3xl text-2xl text-cards text-center font-extrabold">
