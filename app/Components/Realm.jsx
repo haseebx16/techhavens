@@ -9,37 +9,101 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Realm = () => {
   const sectionRef = useRef(null);
+  const canvasRef = useRef(null);
+  const contentRef = useRef(null);
 
   useEffect(() => {
-    const element = sectionRef.current;
+    const canvas = canvasRef.current;
+    const ctx = canvas.getContext("2d");
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
 
-    gsap.fromTo(
-      element,
+    let gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+    gradient.addColorStop(0, "#000000"); 
+    gradient.addColorStop(1, "#000000");  
+
+    let angle = 0;
+    const animateBackground = () => {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = gradient;
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+      angle += 0.01;
+      ctx.setTransform(Math.cos(angle), Math.sin(angle), -Math.sin(angle), Math.cos(angle), 0, 0);
+      requestAnimationFrame(animateBackground);
+    };
+
+    animateBackground();
+
+    const sectionElement = sectionRef.current;
+    const contentElement = contentRef.current;
+
+    const timeline = gsap.timeline({
+      scrollTrigger: {
+        trigger: sectionElement,
+        start: "top center",
+        end: "top center",
+        toggleActions: "play none none reverse",
+      },
+    });
+
+    timeline.fromTo(
+      sectionElement,
       { scale: 1, padding: "3rem", height: "auto", width: "100%", zIndex: 20 },
       {
-        scale: 1.5, 
-        padding: "0", 
+        scale: 1.5,
+        padding: "0",
         height: "100vh",
         width: "100vw",
-        duration: 1,
+        duration: 2,
         ease: "power2.out",
-        scrollTrigger: {
-          trigger: element,
-          start: "top center",
-          end: "top center",
-          toggleActions: "play none none reverse",
-        },
       }
     );
+
+    timeline.fromTo(
+      contentElement,
+      { opacity: 0, display: "none" },
+      { opacity: 1, display: "block", duration: 1 },
+      "-=1"
+    );
+
+    return () => {
+      cancelAnimationFrame(animateBackground);
+    };
   }, []);
 
   return (
     <section
       ref={sectionRef}
-      className={`${font.className} bg-black p-12 text-white flex justify-center items-center`}
-      style={{ zIndex: 1000 }}
+      className={`${font.className} text-white flex flex-col items-center justify-center relative`}
+      style={{
+        height: "100vh",
+        overflow: "hidden",
+        position: "relative",
+        zIndex: 1000,
+      }}
     >
-      <p className="text-5xl">Enter The Realm Of Tech Haven</p>
+      <canvas ref={canvasRef} className="absolute top-0 left-0 z-0" />
+
+      <div className="text-left px-12 w-full relative z-10">
+        <p className="text-5xl md:pl-36 lg:pl-64 text-white glow-text">Enter The Realm Of Tech Haven</p>
+        <div
+          ref={contentRef}
+          className="hidden-content mt-8 md:pl-36 lg:pl-64"
+          style={{
+            opacity: 0,
+            display: "none",
+          }}
+        >
+          <p className="text-4xl text-cards glow-text">What is Tech Haven?</p>
+          <p className="text-lg max-w-xl mt-4 text-white glow-text">
+            At Tech Haven, our agile and multi-disciplinary development teams
+            have a well-defined methodology to deliver high-quality results. Our
+            expertise spans a wide range of developmental projects, from UI/UX
+            design to web or mobile development.
+          </p>
+        </div>
+      </div>
     </section>
   );
 };

@@ -71,3 +71,7 @@ body {
     opacity: 1;
   }
 }
+
+.glow-text {
+  text-shadow: 0 0 10px #ffffff, 0 0 2px #00ffcc, 0 0 3px #00ffcc;
+}
