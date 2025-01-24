@@ -1,8 +1,10 @@
 "use client";
 
 import Link from 'next/link';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { font } from './fonts/font';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Header() {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
@@ -17,14 +19,21 @@ export default function Header() {
     "Payment Merchant Services"
   ];
 
+  useEffect(() => {
+          AOS.init({
+            duration: 1000,
+            once: true,
+          });
+        }, []);
+
   return (
     <header className={`${font.className} bg-black relative top-0 w-full`}>
       <nav className="max-w-[1400px] mx-auto px-4 py-4 flex items-center justify-between">
         {/* Logo */}
-        <div className="flex items-center">
+        <div data-aos="flip-left" className="flex items-center">
           <Link href="/">
             <img
-              src="/logo.png"
+              src="/logo-new-2.png"
               alt="Logo"
               className="w-48 h-auto"
             />
@@ -33,12 +42,12 @@ export default function Header() {
 
         {/* Navigation Links */}
         <div className="hidden md:flex space-x-6 items-center">
-          <Link href="/" className="text-white hover:text-cards transition">
+          <Link data-aos="fade-right" href="/" className="text-white hover:text-cards transition">
             Home
           </Link>
 
           <div 
-            className="relative group"
+            className="relative group" data-aos="fade-up"
             onMouseEnter={() => setIsServicesOpen(true)}
             onMouseLeave={() => setIsServicesOpen(false)}
           >
@@ -54,6 +63,7 @@ export default function Header() {
             {isServicesOpen && (
               <div 
                 className="absolute top-full left-0 transform bg-white shadow-lg rounded-lg py-2 w-64 z-50 overflow-visible"
+                data-aos="fade-down"
               >
                 {services.map((service, index) => (
                   <Link 
@@ -68,13 +78,13 @@ export default function Header() {
             )}
           </div>
 
-          <Link href="/contact" className="text-white hover:text-cards transition">
+          <Link  data-aos="fade-left" href="/contact" className="text-white hover:text-cards transition">
             Contact Us
           </Link>
         </div>
 
         {/* Contact Info */}
-        <div className="hidden md:flex items-center text-cards font-bold">
+        <div data-aos="fade-left" className="hidden md:flex items-center text-cards font-bold">
           <a href="mailto:info@techhaven.com" className="hover:text-white">
             info@techhaven.com
           </a>
@@ -114,7 +124,7 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-customBlue w-full shadow-md">
+        <div className="md:hidden bg-black w-full shadow-md">
           <div className="flex flex-col p-4 space-y-4">
             <Link
               href="/"

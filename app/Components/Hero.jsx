@@ -3,6 +3,9 @@ import { useState } from 'react';
 import emailjs from 'emailjs-com';
 import { font } from './fonts/font';
 import ParticlesCX from './Particles';
+import { useEffect } from 'react';
+import AOS from "aos"
+import "aos/dist/aos.css"
 
 export default function Hero() {
   const [formData, setFormData] = useState({
@@ -13,6 +16,13 @@ export default function Hero() {
   });
 
   const [error, setError] = useState('');
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -71,19 +81,19 @@ export default function Hero() {
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
           {/* Text Content */}
           <div className="text-white max-w-2xl">
-            <h2 className="font-oswald text-lg md:text-xl mb-4 text-cards uppercase font-medium tracking-wider">
+            <h2 data-aos="fade-down" className="font-oswald text-lg md:text-xl mb-4 text-cards uppercase font-medium tracking-wider">
               Tech Haven - Crafting Excellence, Providing Growth
             </h2>
-            <h1 className="font-oswald text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-wide">
+            <h1 data-aos="fade-up" className="font-oswald text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-wide">
               YOUR PATHWAY TO TURNING LITERARY DREAMS INTO REALITY
             </h1>
-            <button className="btn-primary hover:text-white hover:bg-card1 bg-cards text-black text-lg uppercase tracking-wider">
+            <button data-aos="fade-right" className="btn-primary hover:text-white hover:bg-card1 bg-cards text-black text-lg uppercase tracking-wider">
               DISCOVER MORE
             </button>
           </div>
 
           {/* Contact Form */}
-          <div className="bg-gray-800/80 hidden md:block p-8 rounded-lg w-full max-w-md">
+          <div data-aos="fade-left" className="bg-gray-800/80 hidden md:block p-8 rounded-lg w-full max-w-md">
             <h3 className="font-oswald text-2xl text-white font-bold mb-6 text-center">Let's Get Started</h3>
             <form onSubmit={handleSubmit} className="space-y-4">
               <input

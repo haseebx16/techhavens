@@ -33,7 +33,7 @@ const PageTransition = ({ onAnimationComplete }) => {
       
     >
         <img
-            src="/logo.png" // Replace with your logo path
+            src="/logo-new-2.png" // Replace with your logo path
             alt="Logo"
             style={{
             width: "800px", // Adjust the size of the logo
