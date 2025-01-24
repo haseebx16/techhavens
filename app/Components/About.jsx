@@ -11,6 +11,7 @@ const Realm = () => {
   const sectionRef = useRef(null);
   const canvasRef = useRef(null);
   const contentRef = useRef(null);
+  const imageRef = useRef(null);  // Reference for the image
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -19,8 +20,8 @@ const Realm = () => {
     canvas.height = window.innerHeight;
 
     let gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
-    gradient.addColorStop(0, "#000000"); 
-    gradient.addColorStop(1, "#000000");  
+    gradient.addColorStop(0, "#000000");
+    gradient.addColorStop(1, "#000000");
 
     let angle = 0;
     const animateBackground = () => {
@@ -37,6 +38,7 @@ const Realm = () => {
 
     const sectionElement = sectionRef.current;
     const contentElement = contentRef.current;
+    const imageElement = imageRef.current;
 
     const timeline = gsap.timeline({
       scrollTrigger: {
@@ -47,6 +49,7 @@ const Realm = () => {
       },
     });
 
+    // Animation for the section
     timeline.fromTo(
       sectionElement,
       { scale: 1, padding: "3rem", height: "auto", width: "100%", zIndex: 20 },
@@ -60,11 +63,20 @@ const Realm = () => {
       }
     );
 
+    // Fade in content and reveal the image
     timeline.fromTo(
       contentElement,
       { opacity: 0, display: "none" },
       { opacity: 1, display: "block", duration: 1 },
       "-=1"
+    );
+
+    // Fade in image after content appears
+    timeline.fromTo(
+      imageElement,
+      { opacity: 0, display: "none" },
+      { opacity: 1, display: "block", duration: 1 },
+      "-=1" // Starts at the same time as content
     );
 
     return () => {
@@ -75,7 +87,7 @@ const Realm = () => {
   return (
     <section
       ref={sectionRef}
-      className={`${font.className} text-white flex flex-col items-center justify-center relative`}
+      className={`${font.className} text-white flex flex-col lg:flex-row items-center justify-between relative`}
       style={{
         height: "100vh",
         overflow: "hidden",
@@ -85,8 +97,8 @@ const Realm = () => {
     >
       <canvas ref={canvasRef} className="absolute top-0 left-0 z-0" />
 
-      <div className="text-left px-12 w-full relative z-10">
-        <p className="text-5xl md:pl-36 lg:pl-64 text-white glow-text">Enter The Realm Of Tech Haven</p>
+      <div className="text-left px-12 w-full relative z-10 lg:w-1/2">
+        <p ref={contentRef} className="text-5xl md:pl-36 lg:pl-64 text-white glow-text">About Us</p>
         <div
           ref={contentRef}
           className="hidden-content mt-8 md:pl-36 lg:pl-64"
@@ -103,6 +115,15 @@ const Realm = () => {
             design to web or mobile development.
           </p>
         </div>
+      </div>
+
+      {/* Image */}
+      <div ref={imageRef} className="relative lg:w-1/2" style={{ opacity: 0, display: "none" }}>
+        <img
+          src="/robo-hand.png"  // Replace this with the actual path to your image
+          alt="Robo Hand"
+          className="w-full h-96 object-contain md:pr-32 lg:pr-64"
+        />
       </div>
     </section>
   );
