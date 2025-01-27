@@ -12,7 +12,7 @@ const PreLoader = () => {
       preLoaderAnim(); // Trigger animation
       const timer = setTimeout(() => {
         setHasLoaded(true); // Mark as loaded
-      }, 3000); // Adjust timing as needed
+      }, 5000); // Adjust timing as needed
 
       return () => clearTimeout(timer);
     }
