@@ -9,10 +9,10 @@ const PreLoader = () => {
 
   useEffect(() => {
     if (!hasLoaded) {
-      preLoaderAnim();
+      preLoaderAnim(); // Trigger animation
       const timer = setTimeout(() => {
-        setHasLoaded(true);
-      }, 3000);
+        setHasLoaded(true); // Mark as loaded
+      }, 3000); // Adjust timing as needed
 
       return () => clearTimeout(timer);
     }

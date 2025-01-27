@@ -5,6 +5,7 @@ import { font } from './fonts/font';
 import ParticlesCX from './Particles';
 import { useEffect } from 'react';
 import AOS from "aos"
+import ContactModal from './ContactModal';
 import "aos/dist/aos.css"
 
 export default function Hero() {
@@ -70,6 +71,11 @@ export default function Hero() {
       });
   }
 
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  
+    const openModal = () => setIsModalOpen(true);
+    const closeModal = () => setIsModalOpen(false);
+
   return (
     <section className={`${font.className} relative bg-black min-h-screen p-12 overflow-hidden`}>
       <div className="absolute top-0 left-0 w-full h-full z-0">
@@ -87,9 +93,10 @@ export default function Hero() {
             <h1 data-aos="fade-up" className="font-oswald text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-wide">
               YOUR PATHWAY TO TURNING LITERARY DREAMS INTO REALITY
             </h1>
-            <a href='/contact'><button data-aos="fade-right" className="btn-primary hover:text-white hover:bg-card1 bg-cards text-black text-lg uppercase tracking-wider">
+            <button onClick={openModal} data-aos="fade-right" className="btn-primary hover:text-white hover:bg-card1 bg-cards text-black text-lg uppercase tracking-wider">
               DISCOVER MORE
-            </button></a>
+            </button>
+            <ContactModal isOpen={isModalOpen} onClose={closeModal} />
           </div>
 
           {/* Contact Form */}

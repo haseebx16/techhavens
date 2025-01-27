@@ -17,9 +17,7 @@ export const PreLoaderProvider = ({ children }) => {
 export const usePreLoader = () => {
   const context = useContext(PreLoaderContext);
   if (!context) {
-    throw new Error(
-      "usePreLoader must be used within a PreLoaderProvider"
-    );
+    throw new Error("usePreLoader must be used within a PreLoaderProvider");
   }
   return context;
 };

@@ -4,6 +4,8 @@ import React, { useEffect, useRef } from 'react';
 import { font } from './fonts/font';
 import Parallax from 'parallax-js';
 import AOS from "aos"
+import { useState } from 'react';
+import ContactModal from './ContactModal';
 import "aos/dist/aos.css"
 
 const Think = () => {
@@ -24,6 +26,11 @@ const Think = () => {
       once: true,
     });
   }, []);
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+    
+      const openModal = () => setIsModalOpen(true);
+      const closeModal = () => setIsModalOpen(false);
 
   return (
     <div
@@ -46,9 +53,10 @@ const Think = () => {
             expertise spans a wide range of developmental projects, from UI/UX
             design to web or mobile development.
           </p>
-          <a href='/contact'><button data-aos="fade-left" className="btn-primary bg-cards text-black hover:text-white hover:bg-card1 mt-6">
+          <button onClick={openModal} data-aos="fade-left" className="btn-primary bg-cards text-black hover:text-white hover:bg-card1 mt-6">
             Let's Connect
-          </button></a>
+          </button>
+          <ContactModal isOpen={isModalOpen} onClose={closeModal} />
         </div>
       </section>
     </div>
