@@ -1,4 +1,5 @@
-import Image from "next/image";
+"use client";
+
 import Header from "./Components/Navbar";
 import Hero from "./Components/Hero";
 import Think from "./Components/Think";
@@ -11,8 +12,10 @@ import Connect from "./Components/Connect";
 import Footer from "./Components/Footer";
 import Realm from "./Components/Realm";
 import PreLoader from "./Components/PreLoader";
+import { useState } from "react";
 
 export default function Home() {
+
   return (
    <div>
       <PreLoader/>

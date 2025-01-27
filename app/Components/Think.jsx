@@ -46,9 +46,9 @@ const Think = () => {
             expertise spans a wide range of developmental projects, from UI/UX
             design to web or mobile development.
           </p>
-          <button data-aos="fade-left" className="btn-primary bg-cards text-black hover:text-white hover:bg-card1 mt-6">
+          <a href='/contact'><button data-aos="fade-left" className="btn-primary bg-cards text-black hover:text-white hover:bg-card1 mt-6">
             Let's Connect
-          </button>
+          </button></a>
         </div>
       </section>
     </div>

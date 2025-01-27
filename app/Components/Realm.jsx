@@ -84,6 +84,10 @@ const Realm = () => {
     };
   }, []);
 
+  useEffect(() => {
+    console.log("Realm component mounted");
+  }, []);
+
   return (
     <section
       ref={sectionRef}

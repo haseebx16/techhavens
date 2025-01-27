@@ -7,6 +7,7 @@ import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import PageTransition from './Components/PageTransition';
 import Lenis from 'lenis';
+import { PreLoaderProvider } from "./Components/PreLoaderContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -59,21 +60,23 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <AnimatePresence exitBeforeEnter>
-          {isAnimating && !isHomePage && (
-            <PageTransition key={pathname} onAnimationComplete={() => setIsAnimating(false)} />
-          )}
-          <div
-            style={{
-              position: isHomePage ? 'relative' : 'initial',
-              zIndex: isHomePage ? 'auto' : 10,
-            }}
-            id="main-container"
-            className="overflow-hidden"
-          >
-            {children}
-          </div>
-        </AnimatePresence>
+        <PreLoaderProvider>
+          <AnimatePresence exitBeforeEnter>
+            {isAnimating && !isHomePage && (
+              <PageTransition key={pathname} onAnimationComplete={() => setIsAnimating(false)} />
+            )}
+            <div
+              style={{
+                position: isHomePage ? 'relative' : 'initial',
+                zIndex: isHomePage ? 'auto' : 10,
+              }}
+              id="main-container"
+              className="overflow-hidden"
+            >
+              {children}
+            </div>
+          </AnimatePresence>
+        </PreLoaderProvider>
       </body>
     </html>
   );

@@ -24,7 +24,7 @@ const Client = () => {
         </section>
         <section className='md:w-[50%] md:ml-8 flex flex-col justify-center items-start w-full'>
             <p data-aos="fade-down" className='md:text-xl text-white text-lg pt-4 md:max-w-xl'>Complex products excite us! Our team integrate value-added solutions to enhance applications or any software projects that need further improvement. Get in touch with us to learn more how we can bring value to your project!</p>
-            <button data-aos="fade-up" className='btn-primary bg-opacity-100 hover:bg-opacity-100 bg-cards text-black hover:text-white hover:bg-card1 mt-6'>Get In Touch</button>
+            <a href='/contact'><button data-aos="fade-up" className='btn-primary bg-opacity-100 hover:bg-opacity-100 bg-cards text-black hover:text-white hover:bg-card1 mt-6'>Get In Touch</button></a>
         </section>
     </div>
   )

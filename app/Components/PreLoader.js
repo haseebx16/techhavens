@@ -2,11 +2,24 @@
 
 import React, { useEffect } from "react";
 import { preLoaderAnim } from "./animations";
+import { usePreLoader } from "./PreLoaderContext";
 
 const PreLoader = () => {
+  const { hasLoaded, setHasLoaded } = usePreLoader();
+
   useEffect(() => {
-    preLoaderAnim();
-  }, []);
+    if (!hasLoaded) {
+      preLoaderAnim();
+      const timer = setTimeout(() => {
+        setHasLoaded(true);
+      }, 3000);
+
+      return () => clearTimeout(timer);
+    }
+  }, [hasLoaded, setHasLoaded]);
+
+  if (hasLoaded) return null;
+
   return (
     <div className="preloader">
       <div className="texts-container">
