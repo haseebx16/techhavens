@@ -22,7 +22,7 @@ const PreLoader = () => {
 
   return (
     <div className="preloader">
-      <div className="texts-container">
+      <div className="texts-container flex flex-col md:flex-row">
         <span>Welcome to&nbsp;</span>
         <span className="text-cards">Tech</span>
         <span>Haven.</span>

@@ -51,15 +51,16 @@ const page = () => {
     
         emailjs
           .send(
-            "service_zfdtt1k", // Replace with your EmailJS service ID
-            "template_ssqyv8w", // Replace with your EmailJS template ID
+            'service_vcvqcan', 
+            'template_4ela61n',
             {
-              name,
-              email,
+              from_name: name,
+              to_email: 'support@coastalghostwriting.com',
+              from_email: email,
               phone,
               message,
             },
-            "_09CMb0W-8XfBbNAC" // Replace with your EmailJS public key
+            'TihDoLxcsdR_sDnwT'
           )
           .then(() => {
             alert("Your message was sent successfully!");

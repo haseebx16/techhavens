@@ -91,7 +91,7 @@ const Realm = () => {
   return (
     <section
       ref={sectionRef}
-      className={`${font.className} text-white flex flex-col lg:flex-row items-center justify-between relative`}
+      className={`${font.className} text-white hidden md:block flex flex-col lg:flex-row items-center justify-between relative`}
       style={{
         height: "100vh",
         overflow: "hidden",
