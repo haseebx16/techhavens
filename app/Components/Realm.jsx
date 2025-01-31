@@ -96,7 +96,7 @@ const Realm = () => {
         height: "100vh",
         overflow: "hidden",
         position: "relative",
-        zIndex: 1000,
+        
       }}
     >
       <canvas ref={canvasRef} className="absolute top-0 left-0 z-0" />

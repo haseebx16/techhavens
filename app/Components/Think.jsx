@@ -36,12 +36,12 @@ const Think = () => {
     <div
       className={`${font.className} md:p-16 bg-black overflow-hidden p-8 flex flex-col md:flex-row md:justify-center md:items-center`}
     >
-      <section className="md:w-[50%] w-[100%] z-20 md:mr-12 flex flex-col justify-center items-center" ref={parallaxContainer}>
+      <section className="md:w-[50%] w-[100%]  md:mr-12 flex flex-col justify-center items-center" ref={parallaxContainer}>
         <div data-depth="0.2">
           <img src="asian-about.jpg" alt="img" />
         </div>
       </section>
-      <section className="md:w-[50%] md:pt-0 pt-12 z-20 w-full">
+      <section className="md:w-[50%] md:pt-0 pt-12  w-full">
         <div>
           <p data-aos="fade-right" className="md:text-3xl text-2xl text-cards">Think, Hire, Develop</p>
           <h1 data-aos="fade-down" className="md:text-5xl text-3xl font-bold text-white mt-6">

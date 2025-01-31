@@ -26,10 +26,10 @@ const Footer = () => {
             {/* <li data-aos="fade-down" className='hover:text-white hover:cursor-pointer'>Address</li> */}
             {/* <li data-aos="fade-right" className='hover:text-white hover:cursor-pointer'>Number</li> */}
             
-            <li data-aos="fade-left" className='hover:text-white hover:cursor-pointer'>info@techhavenmarketing.com</li>
+            <a href='mailto:info@techhaven.com'><li data-aos="fade-left" className='hover:text-white hover:cursor-pointer'>info@techhavenmarketing.com</li></a>
           </ul>
 
-          <ul className="space-y-0 text-lg p-4 pt-8 text-center md:text-left md:p-0 max-w-sm">
+          {/* <ul className="space-y-0 text-lg p-4 pt-8 text-center md:text-left md:p-0 max-w-sm">
             <li className="flex items-center space-x-2">
               <FaFacebook size={20} />
               <span>Facebook</span>
@@ -42,7 +42,7 @@ const Footer = () => {
               <FaInstagram size={20} />
               <span>Instagram</span>
             </li>
-          </ul>
+          </ul> */}
         </div>
       </div>
     </footer>

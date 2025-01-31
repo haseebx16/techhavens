@@ -40,8 +40,8 @@ const ContactModal = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50">
-      <div className="bg-black p-8 rounded-lg shadow-lg w-full max-w-lg relative">
+    <div className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center" style={{ zIndex: 1000 }}>
+      <div className="bg-black p-4 rounded-lg shadow-lg w-full max-w-3xl relative">
         <button
           onClick={onClose}
           className="absolute top-2 right-2 text-white hover:text-cards"
@@ -118,7 +118,7 @@ const ContactModal = ({ isOpen, onClose }) => {
             Submit
           </button>
         </form>
-        <p className="text-white mt-4"><span className="text-cards pt-4">Disclaimer:</span> By providing a telephone number and submitting the form you are consenting to be contacted by SMS text message & confirming that you're over 18. Message and data rates may apply. Reply STOP to opt out of further messaging. Visit <a href='/privacypolicy' className='text-cards underline'>Privacy Policy Page</a> for further knowledge.</p>
+        <p className="text-white w-full mt-4"><span className="text-cards pt-4">Disclaimer:</span> By providing a telephone number and submitting the form you are consenting to be contacted by SMS text message & confirming that you're over 18. Message and data rates may apply. Reply STOP to opt out of further messaging. Visit <a href='/privacypolicy' className='text-cards underline'>Privacy Policy Page</a> for further knowledge.</p>
       </div>
     </div>
   );

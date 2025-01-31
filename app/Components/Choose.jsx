@@ -43,12 +43,12 @@ const Choose = () => {
 
   return (
     <div className={`${font.className} md:p-16 bg-black overflow-hidden z-10 p-8 flex flex-col md:flex-row md:justify-center md:items-center`} ref={sectionRef}>
-        <section className="md:w-[50%] w-[100%] z-20 md:mr-12 flex flex-col justify-center items-center" ref={parallaxContainer}>
+        <section className="md:w-[50%] w-[100%]  md:mr-12 flex flex-col justify-center items-center" ref={parallaxContainer}>
             <div data-depth="0.2">
                 <img src='/iPhone.png' className='md:ml-24 ml-28'/>
             </div>
         </section>
-        <section className='md:w-[50%] z-20 pt-12 md:pt-0 w-full'>
+        <section className='md:w-[50%]  pt-12 md:pt-0 w-full'>
             <div>
                 <p className='md:text-3xl text-2xl uppercase text-cards'>Curious Why-</p>
                 <h1 className='md:text-5xl text-3xl font-bold text-white mt-6'>People Choose Tech Haven</h1>
