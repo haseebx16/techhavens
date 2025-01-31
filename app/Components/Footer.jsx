@@ -23,6 +23,8 @@ const Footer = () => {
           <ul className="space-y-0 p-4 md:p-0 text-lg">
             {/* <li data-aos="fade-down" className='hover:text-white hover:cursor-pointer'>Address</li> */}
             {/* <li data-aos="fade-right" className='hover:text-white hover:cursor-pointer'>Number</li> */}
+            
+            <Link href={"/privacypolicy"}><li  className='hover:text-white hover:cursor-pointer'>Privacy Policy</li></Link>
             <li data-aos="fade-left" className='hover:text-white hover:cursor-pointer'>info@techhaven.com</li>
           </ul>
 

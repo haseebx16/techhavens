@@ -113,11 +113,12 @@ const ContactModal = ({ isOpen, onClose }) => {
 
           <button
             type="submit"
-            className="w-full bg-cards text-black p-2 rounded-lg hover:bg-card1 hover:text-white"
+            className="w-full bg-cards mb-4 text-black p-2 rounded-lg hover:bg-card1 hover:text-white"
           >
             Submit
           </button>
         </form>
+        <p className="text-white mt-4"><span className="text-cards pt-4">Disclaimer:</span> By providing a telephone number and submitting the form you are consenting to be contacted by SMS text message & confirming that you're over 18. Message and data rates may apply. Reply STOP to opt out of further messaging</p>
       </div>
     </div>
   );
