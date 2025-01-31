@@ -152,7 +152,7 @@ const page = () => {
                 2. Consent
                 </h2>
                 <p className="text-white leading-relaxed px-4">
-                By providing your phone number, you consent to its use strictly for the purposes stated above. Consent is obtained through the Contact Form, and you may withdraw consent at any time by contacting us at <span className='text-cards'>info@techhaven.com</span>.
+                By providing your phone number, you consent to its use strictly for the purposes stated above. Consent is obtained through the Contact Form, and you may withdraw consent at any time by contacting us at <span className='text-cards'>info@techhavenmarketing.com</span>.
                 </p>
                 <h2 className="text-4xl font-oswald text-cards  p-4">
                 3. Third-Party Sharing
@@ -179,13 +179,13 @@ const page = () => {
                 5. Your Rights
                 </h2>
                 <p className="text-white leading-relaxed px-4">
-                You may request access to, correction of, or deletion of your phone number from our systems by contacting <span className='text-cards'>info@techhaven.com</span>.
+                You may request access to, correction of, or deletion of your phone number from our systems by contacting <span className='text-cards'>info@techhavenmarketing.com</span>.
                 </p>
                 <h2 className="text-4xl font-oswald text-cards  p-4">
                 Example For Direct Use
                 </h2>
                 <p className="text-white leading-relaxed px-4">
-                "We collect phone numbers solely to contact. Your phone number and consent will never be shared with third-party providers, advertisers, or external organizations unless explicitly required by law or to fulfill services you’ve requested (e.g., SMS delivery). All data is secured and retained only for as long as necessary. You may withdraw consent or request deletion at any time by contacting info@techhaven.com."
+                "We collect phone numbers solely to contact. Your phone number and consent will never be shared with third-party providers, advertisers, or external organizations unless explicitly required by law or to fulfill services you’ve requested (e.g., SMS delivery). All data is secured and retained only for as long as necessary. You may withdraw consent or request deletion at any time by contacting info@techhavenmarketing.com."
                 </p>
         </div>
         <Footer/>

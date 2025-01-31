@@ -18,14 +18,15 @@ const Footer = () => {
             <Link href={"/"}><li data-aos="fade-down" className='hover:text-white hover:cursor-pointer'>Home</li></Link>
             <Link href={"/about"}><li data-aos="fade-right" className='hover:text-white hover:cursor-pointer'>Services</li></Link>
             <Link href={"/contact"}><li data-aos="fade-up" className='hover:text-white hover:cursor-pointer'>Contact</li></Link>
+            <Link href={"/privacypolicy"}><li  className='hover:text-white hover:cursor-pointer'>Privacy Policy</li></Link>
+
           </ul>
 
           <ul className="space-y-0 p-4 md:p-0 text-lg">
             {/* <li data-aos="fade-down" className='hover:text-white hover:cursor-pointer'>Address</li> */}
             {/* <li data-aos="fade-right" className='hover:text-white hover:cursor-pointer'>Number</li> */}
             
-            <Link href={"/privacypolicy"}><li  className='hover:text-white hover:cursor-pointer'>Privacy Policy</li></Link>
-            <li data-aos="fade-left" className='hover:text-white hover:cursor-pointer'>info@techhaven.com</li>
+            <li data-aos="fade-left" className='hover:text-white hover:cursor-pointer'>info@techhavenmarketing.com</li>
           </ul>
 
           <ul className="space-y-0 text-lg p-4 pt-8 text-center md:text-left md:p-0 max-w-sm">
