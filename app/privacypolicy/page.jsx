@@ -107,7 +107,7 @@ const page = () => {
             Your Privacy, Our Commitment
           </h1>
           <p className="text-white leading-relaxed p-4">
-                Amazon Legacy Press takes your privacy seriously. We are dedicated to protecting your personal data and using it responsibly. Our Consumer Data Policy ensures transparency and fosters trust, so you can engage with our services confidently.
+                Tech Haven Marketing LLC takes your privacy seriously. We are dedicated to protecting your personal data and using it responsibly. Our Consumer Data Policy ensures transparency and fosters trust, so you can engage with our services confidently.
                 </p>
                 <h2 className="text-4xl font-oswald text-cards p-4">
                 Data Collection
@@ -160,15 +160,7 @@ const page = () => {
                 <p className="text-white leading-relaxed px-4">
                 No mobile information will be shared with third parties/affiliates for marketing/promotional purposes. All other categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties
                 </p>
-                <h2 className="text-4xl font-oswald text-cards  p-4">
-                Exceptions:
-                </h2>
-                <p className="text-white leading-relaxed px-4">
-                If required by law (e.g., legal subpoena, regulatory compliance).
-                </p>
-                <p className="text-white leading-relaxed px-4">
-                For service providers directly involved in delivering the services you requested (e.g., SMS gateway providers). These partners are contractually prohibited from using your data for unrelated purposes
-                </p>
+                
                 <h2 className="text-4xl font-oswald text-cards  p-4">
                 4. Data Security
                 </h2>
