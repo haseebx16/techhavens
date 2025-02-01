@@ -158,7 +158,7 @@ const page = () => {
                 3. Third-Party Sharing
                 </h2>
                 <p className="text-white leading-relaxed px-4">
-                We do not share, sell, or lease your phone number to third-party providers, marketers, or external organizations. Your phone number and associated consent details are retained securely and used exclusively for the purposes outlined in this policy.
+                No mobile information will be shared with third parties/affiliates for marketing/promotional purposes. All other categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties
                 </p>
                 <h2 className="text-4xl font-oswald text-cards  p-4">
                 Exceptions:
