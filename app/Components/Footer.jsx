@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="flex flex-wrap justify-between md:space-x-16">
           <ul className="space-y-2 p-4 md:p-0 text-lg">
             <Link href={"/"}><li data-aos="fade-down" className='hover:text-white hover:cursor-pointer'>Home</li></Link>
-            <Link href={"/about"}><li data-aos="fade-right" className='hover:text-white hover:cursor-pointer'>Services</li></Link>
+            <Link href={"/services/uiuxdesigning"}><li data-aos="fade-right" className='hover:text-white hover:cursor-pointer'>Services</li></Link>
             <Link href={"/contact"}><li data-aos="fade-up" className='hover:text-white hover:cursor-pointer'>Contact</li></Link>
             <Link href={"/privacypolicy"}><li  className='hover:text-white hover:cursor-pointer'>Privacy Policy</li></Link>
 
