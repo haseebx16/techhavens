@@ -12,6 +12,7 @@ import "aos/dist/aos.css";
 import Footer from '@/app/Components/Footer'
 import WhyChooseUs from '@/app/Components/WhyChooseUs'
 import Client from '@/app/Components/Client'
+import ContactModal from '@/app/Components/ContactModal'
 import Connect from '@/app/Components/Connect'
 
 const page = () => {
@@ -76,6 +77,14 @@ const page = () => {
           });
       };
     
+      const [isModalOpen, setIsModalOpen] = useState(false);
+      const openModal = () => {
+        setIsModalOpen(true);
+      }
+      
+      const closeModal = () => {
+        setIsModalOpen(false);
+      }
 
   return (
     <div>
@@ -120,9 +129,10 @@ const page = () => {
           Are you in need of a skilled Graphics Designer or team to bring your designed idea to life? Look no further than Tech Haven.
           </p>
           
-          <button className="btn-primary bg-cards text-black hover:text-white hover:bg-card1 mt-6">
+          <button onClick={openModal} className="btn-primary bg-cards text-black hover:text-white hover:bg-card1 mt-6">
             Let's Connect
           </button>
+          <ContactModal isOpen={isModalOpen} onClose={closeModal}/>
         </div>
       </section>
     </div>

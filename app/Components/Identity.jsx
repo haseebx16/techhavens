@@ -26,7 +26,7 @@ const Identity = () => {
         </section>
         <section className='md:w-[50%] pt-20 md:pt-0 w-full '>
             <div>
-                <p className='md:text-3xl text-2xl uppercase text-cards'>Tech Haven PVT LTD--</p>
+                <p className='md:text-3xl text-2xl uppercase text-cards'>Tech Haven &mdash;</p>
                 <h1 className='md:text-5xl text-3xl font-bold text-white mt-6'>To Be The Blueprint for Your Digital Identity.</h1>
                 <p className='text-md text-white mt-6'>At Tech Haven, build the perfect team for your project whenever needed! This enables you to save time, focus on your project, and ensure successful completion.</p>
                 <div className='grid md:grid-cols-2 mt-6 gap-4 '>

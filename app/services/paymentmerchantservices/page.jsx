@@ -11,6 +11,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Footer from '@/app/Components/Footer'
 import WhyChooseUs from '@/app/Components/WhyChooseUs'
+import ContactModal from '@/app/Components/ContactModal'
 import Client from '@/app/Components/Client'
 import Connect from '@/app/Components/Connect'
 
@@ -75,7 +76,16 @@ const page = () => {
             setIsSubmitting(false);
           });
       };
-    
+      
+      const [ isModalOpen, setIsModalOpen ] = useState(false)
+
+      const openModal = () => {
+        setIsModalOpen(true)
+      }
+
+      const closeModal = () => {
+        setIsModalOpen(false)
+      }
 
   return (
     <div>
@@ -122,9 +132,10 @@ const page = () => {
           <p className="text-md text-white mt-6">
           Our payment merchant service is built for businesses of all sizes. Enjoy end-to-end encryption, multi-currency support, and real-time analytics, empowering you to focus on growth while we handle the complexities of payment processing.
           </p>
-          <button className="btn-primary bg-cards text-black hover:text-white hover:bg-card1 mt-6">
+          <button onClick={openModal} className="btn-primary bg-cards text-black hover:text-white hover:bg-card1 mt-6">
             Let's Connect
           </button>
+          <ContactModal isOpen={isModalOpen} onClose={closeModal}/>
         </div>
       </section>
     </div>

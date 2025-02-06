@@ -196,7 +196,7 @@ const page = () => {
               {isSubmitting ? "Submitting..." : "Submit"}
             </button>
           </form>
-        <p className="text-white max-w-xl mt-4"><span className="text-cards pt-4">Disclaimer:</span> By providing a telephone number and submitting the form you are consenting to be contacted by SMS text message & confirming that you're over 18. Message and data rates may apply. Reply STOP to opt out of further messaging. Visit <a href='/privacypolicy' className='text-cards underline'>Privacy Policy Page</a> for further knowledge.</p>
+        <p className="text-white max-w-xl mt-4"><span className="text-cards pt-4">Disclaimer:</span> By providing a telephone number and submitting the form you are consenting to be contacted by SMS text message . Message and data rates may apply. Reply STOP to opt out of further messaging. Visit <a href='/privacypolicy' className='text-cards underline'>Privacy Policy Page</a> for further knowledge.</p>
 
         </div>
         <Footer/>

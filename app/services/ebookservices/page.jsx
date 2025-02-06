@@ -13,6 +13,7 @@ import Footer from '@/app/Components/Footer'
 import WhyChooseUs from '@/app/Components/WhyChooseUs'
 import Client from '@/app/Components/Client'
 import Connect from '@/app/Components/Connect'
+import ContactModal from '@/app/Components/ContactModal'
 
 const page = () => {
 
@@ -75,7 +76,16 @@ const page = () => {
             setIsSubmitting(false);
           });
       };
+
+      const [ isModalOpen, setIsModalOpen ] = useState(false);
+
+      const openModal = () => {
+        setIsModalOpen(true);
+      }
     
+      const closeModal = () => {
+        setIsModalOpen(false);
+      }
 
   return (
     <div>
@@ -120,9 +130,10 @@ const page = () => {
           Are you in need of a skilled Ghostwriter or team to bring your book idea to life? Look no further than Tech Haven.
           </p>
           
-          <button className="btn-primary bg-cards text-black hover:text-white hover:bg-card1 mt-6">
+          <button onClick={openModal} className="btn-primary bg-cards text-black hover:text-white hover:bg-card1 mt-6">
             Let's Connect
           </button>
+          <ContactModal isOpen={isModalOpen} onClose={closeModal}/>
         </div>
       </section>
     </div>
