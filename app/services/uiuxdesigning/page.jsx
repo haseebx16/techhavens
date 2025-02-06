@@ -13,6 +13,7 @@ import Footer from '@/app/Components/Footer'
 import WhyChooseUs from '@/app/Components/WhyChooseUs'
 import Client from '@/app/Components/Client'
 import Connect from '@/app/Components/Connect'
+import ContactModal from '@/app/Components/ContactModal'
 
 const page = () => {
 
@@ -75,6 +76,13 @@ const page = () => {
             setIsSubmitting(false);
           });
       };
+      const [isModalOpen , setIsModalOpen] = useState(false);
+      const openModal = () => {
+        setIsModalOpen(true)
+      }
+      const closeModal = () =>{
+        setIsModalOpen(false)
+      }
     
 
   return (
@@ -125,9 +133,10 @@ const page = () => {
           <p className="text-md text-white mt-6">
           With our dedicated model, you’ll have a dedicated Designer or team working on your project full-time, ensuring that your project stays on track and on schedule. And with our flexible hiring options, you can choose the level of support that best fits your needs and budget.
           </p>
-          <button className="btn-primary bg-cards text-black hover:text-white hover:bg-card1 mt-6">
+          <button onClick={openModal} className="btn-primary bg-cards text-black hover:text-white hover:bg-card1 mt-6">
             Let's Connect
           </button>
+          <ContactModal isOpen={isModalOpen} onClose={closeModal}></ContactModal>
         </div>
       </section>
     </div>
