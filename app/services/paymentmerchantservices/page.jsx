@@ -133,7 +133,7 @@ const page = () => {
           Our payment merchant service is built for businesses of all sizes. Enjoy end-to-end encryption, multi-currency support, and real-time analytics, empowering you to focus on growth while we handle the complexities of payment processing.
           </p>
           <button onClick={openModal} className="btn-primary bg-cards text-black hover:text-white hover:bg-card1 mt-6">
-            Let's Connect
+            Let's Connect.
           </button>
           <ContactModal isOpen={isModalOpen} onClose={closeModal}/>
         </div>
