@@ -103,7 +103,7 @@ const page = () => {
               Tech Haven - Crafting Excellence, Providing Growth
             </h2>
             <h1 className="font-oswald text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-wide">
-              UI/UX Desigining Services
+              UI/UX Designing Services
             </h1>
           </div>
         </div>
