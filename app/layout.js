@@ -71,6 +71,18 @@ export default function RootLayout({ children }) {
               gtag('config', 'AW-17041210181');
             `}
           </Script>
+        <Script
+            src="https://www.googletagmanager.com/gtag/js?id=AW-17041210181"
+            strategy="afterInteractive"
+          />
+          <Script id="google-analytics-aw" strategy="afterInteractive">
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);} 
+              gtag('js', new Date()); 
+              gtag('config', 'AW-17041210181')
+            `}
+          </Script>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
