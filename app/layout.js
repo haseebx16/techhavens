@@ -8,6 +8,7 @@ import { usePathname } from 'next/navigation';
 import PageTransition from './Components/PageTransition';
 import Lenis from 'lenis';
 import { PreLoaderProvider } from "./Components/PreLoaderContext";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
