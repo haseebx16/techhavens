@@ -16,7 +16,6 @@ export default function Header() {
     'App Development',
     'Graphics Designing',
     "Ebook Services",
-    "Payment Merchant Services"
   ];
 
   useEffect(() => {
