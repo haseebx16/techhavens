@@ -104,7 +104,7 @@ const page = () => {
             data-aos="fade-right"
             className="text-3xl text-cards md:text-3xl text-left md:max-w-4xl font-bold p-4"
           >
-            Your Privacy, Our Commitment
+            Your Privacy, Our Commitments
           </h1>
           <p className="text-white leading-relaxed p-4">
                 Tech Haven Marketing LLC takes your privacy seriously. We are dedicated to protecting your personal data and using it responsibly. Our Consumer Data Policy ensures transparency and fosters trust, so you can engage with our services confidently.
